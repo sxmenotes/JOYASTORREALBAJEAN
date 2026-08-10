@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Torrealba Joyas - Alta Joyería y Argollas de Matrimonio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css">
+<script id="tailwind-config">
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            "colors": {
+                "surface-dim": "#dadada",
+                "on-background": "#1a1c1c",
+                "outline-variant": "#c0c0c0", /* Plateado */
+                "surface-container-low": "#f3f3f4",
+                "surface-container-high": "#e8e8e8",
+                "surface": "#ffffff", /* Blanco */
+                "on-surface": "#111111", /* Negro */
+                "primary": "#111111", 
+                "on-primary": "#ffffff",
+                "secondary": "#d4af37", /* Dorado */
+                "on-secondary": "#ffffff",
+                "secondary-container": "#d4af37", /* Dorado CTA */
+                "on-secondary-container": "#ffffff",
+                "outline": "#c0c0c0", /* Plateado */
+                "background": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+            },
+            "spacing": {
+                "section-gap": "120px",
+                "margin-desktop": "80px",
+                "unit": "8px",
+                "margin-mobile": "20px",
+                "gutter": "24px",
+                "container-max": "1440px"
+            },
+            "fontFamily": {
+                "label-caps": ["Inter"],
+                "cta-label": ["Inter"],
+                "display-lg": ["Bodoni Moda"],
+                "body-lg": ["Inter"],
+                "headline-lg": ["Bodoni Moda"],
+                "display-lg-mobile": ["Bodoni Moda"],
+                "body-md": ["Inter"],
+                "headline-md": ["Bodoni Moda"]
+            },
+            "fontSize": {
+                "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                "cta-label": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }]
+            }
+        }
+    }
+}
+</script>
+</head>
+<body id="inicio" class="bg-background text-on-surface">
+
+<header id="main-header" class="bg-background/90 backdrop-blur-md text-primary relative w-full z-50 border-b border-outline-variant transition-all duration-300">
+<div class="relative flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit w-full max-w-container-max mx-auto h-[80px]">
+    <!-- Mobile menu button -->
+    <button id="mobile-menu-btn" class="md:hidden text-primary hover:text-secondary transition-colors duration-300">
+        <span class="material-symbols-outlined" data-icon="menu">menu</span>
+    </button>
+    
+    <!-- Desktop Navigation Left -->
+    <nav class="hidden md:flex gap-8 font-label-caps text-label-caps">
+        <a href="#lamarca" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">La Marca</a>
+        <a href="#coleccion" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Colección</a>
+    </nav>
+
+    <!-- Logo -->
+    <a class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center h-full py-1" href="#">
+        <img src="assets/logo.png" alt="Torrealba Joyas" class="h-full w-auto object-contain">
+    </a>
+
+    <!-- Desktop Navigation Right -->
+    <nav class="hidden md:flex gap-8 font-label-caps text-label-caps items-center">
+        <a href="#servicios" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Servicios</a>
+        <a href="#contacto" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Contacto</a>
+    </nav>
+    
+    <!-- Mobile right icon spacer (for centering logo) -->
+    <div class="md:hidden w-6"></div>
+</div>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden absolute top-[80px] left-0 w-full bg-background border-b border-outline flex-col py-4 px-margin-mobile shadow-lg">
+    <a href="#lamarca" class="py-3 text-primary font-label-caps uppercase text-center hover:text-secondary">La Marca</a>
+    <a href="#coleccion" class="py-3 text-primary font-label-caps uppercase text-center hover:text-secondary border-t border-outline/30">Colección</a>
+    <a href="#servicios" class="py-3 text-primary font-label-caps uppercase text-center hover:text-secondary border-t border-outline/30">Servicios</a>
+    <a href="#contacto" class="py-3 text-primary font-label-caps uppercase text-center hover:text-secondary border-t border-outline/30">Contacto</a>
+</div>
+</header>
+
+<main class="">
+
+<!-- Hero Section -->
+<section class="relative w-full h-[751px] md:h-[85vh] flex items-center justify-center bg-surface-container-low overflow-hidden">
+<img src="assets/hero_bg.png" alt="Argollas de Matrimonio" class="absolute inset-0 w-full h-full object-cover animate-zoom">
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="relative z-10 text-center px-margin-mobile animate-fade-in-up">
+<span class="block font-label-caps text-sm md:text-base text-on-primary/90 mb-6 tracking-[0.25em] uppercase drop-shadow-md italic">Torrealba Joyas</span>
+<h1 class="md:text-[3.5rem] text-4xl text-on-primary tracking-wide drop-shadow-lg max-w-4xl mx-auto leading-snug font-['Playfair_Display']">El Arte de Forjar Momentos <span id="dynamic-word" class="font-['Great_Vibes'] text-[#D4AF37] text-6xl md:text-[5.5rem] ml-1 pr-2 tracking-normal font-normal inline-block transition-opacity duration-300">Inolvidables</span></h1>
+</div>
+</section>
+
+<!-- La Marca Section -->
+<section id="lamarca" class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-5 flex flex-col justify-center">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">La Marca</h2>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed max-w-md">Especialistas en argollas de matrimonio y alta joyería. Cada pieza es una obra de arte forjada con tradición, elegancia y pasión. Diseñamos con atención al más mínimo detalle para que cada joya cuente una historia eterna.</p>
+</div>
+<div class="md:col-span-6 md:col-start-7 mt-12 md:mt-0 relative h-[530px] shadow-2xl">
+<div class="w-full h-full flex items-center justify-center bg-surface-dim text-on-surface/50 font-label-caps text-4xl tracking-widest">IMAGEN 2</div>
+</div>
+</div>
+</section>
+
+<!-- Colección Section -->
+<section id="coleccion" class="w-full bg-surface-container-lowest border-t border-outline-variant/30 py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="text-center font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-16">Nuestra Colección</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+    <!-- Item 1 -->
+    <div class="flex flex-col group cursor-pointer reveal-on-scroll">
+        <div class="w-full h-[450px] overflow-hidden mb-6 relative">
+            <div class="w-full h-full flex items-center justify-center bg-surface-dim text-on-surface/50 font-label-caps text-3xl tracking-widest transition-transform duration-700 group-hover:scale-105">IMAGEN 3</div>
+            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
+        </div>
+        <h3 class="font-headline-md text-2xl text-primary mb-2 text-center group-hover:text-secondary transition-colors">Argollas Clásicas</h3>
+        <p class="font-body-md text-on-surface/70 text-center">La elegancia de lo atemporal, forjadas en oro de 18k.</p>
+    </div>
+    <!-- Item 2 -->
+    <div class="flex flex-col group cursor-pointer md:mt-16 reveal-on-scroll" style="transition-delay: 100ms;">
+        <div class="w-full h-[450px] overflow-hidden mb-6 relative">
+            <div class="w-full h-full flex items-center justify-center bg-surface-dim text-on-surface/50 font-label-caps text-3xl tracking-widest transition-transform duration-700 group-hover:scale-105">IMAGEN 4</div>
+            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
+        </div>
+        <h3 class="font-headline-md text-2xl text-primary mb-2 text-center group-hover:text-secondary transition-colors">Alta Joyería</h3>
+        <p class="font-body-md text-on-surface/70 text-center">Diseños exclusivos que resaltan el brillo de cada diamante.</p>
+    </div>
+    <!-- Item 3 -->
+    <div class="flex flex-col group cursor-pointer reveal-on-scroll" style="transition-delay: 200ms;">
+        <div class="w-full h-[450px] overflow-hidden mb-6 relative">
+            <div class="w-full h-full flex items-center justify-center bg-surface-dim text-on-surface/50 font-label-caps text-3xl tracking-widest transition-transform duration-700 group-hover:scale-105">IMAGEN 5</div>
+            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
+        </div>
+        <h3 class="font-headline-md text-2xl text-primary mb-2 text-center group-hover:text-secondary transition-colors">Piezas de Autor</h3>
+        <p class="font-body-md text-on-surface/70 text-center">Detalles refinados para complementar cualquier estilo.</p>
+    </div>
+</div>
+<div class="text-center mt-16 reveal-on-scroll">
+    <a href="#contacto" class="inline-flex items-center justify-center border border-outline-variant text-primary font-cta-label text-cta-label px-8 py-4 uppercase tracking-widest hover:border-secondary hover:text-secondary transition-all duration-300">Solicitar Catálogo Completo</a>
+</div>
+</div>
+</section>
+
+<!-- Servicios Section -->
+<section id="servicios" class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <div class="order-2 md:order-1 h-[600px] overflow-hidden shadow-xl reveal-on-scroll">
+        <div class="w-full h-full flex items-center justify-center bg-surface-dim text-on-surface/50 font-label-caps text-4xl tracking-widest grayscale hover:grayscale-0 transition-all duration-700">IMAGEN 6</div>
+    </div>
+    <div class="order-1 md:order-2 flex flex-col justify-center reveal-on-scroll">
+        <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Servicios y Experiencia</h2>
+        
+        <div class="mb-8 pb-8 border-b border-outline-variant/50">
+            <h3 class="font-headline-md text-2xl text-primary mb-3">Diseño Personalizado</h3>
+            <p class="font-body-md text-on-surface">Creamos desde cero la joya de tus sueños. Trae tu idea y nosotros la materializamos con metales y gemas de la más alta calidad.</p>
+        </div>
+        
+        <div class="mb-8 pb-8 border-b border-outline-variant/50">
+            <h3 class="font-headline-md text-2xl text-primary mb-3">Clases de Orfebrería</h3>
+            <p class="font-body-md text-on-surface">Aprende el arte de la orfebrería en nuestro taller. Ofrecemos clases donde podrás forjar tus propias creaciones bajo guía profesional.</p>
+        </div>
+        
+        <div>
+            <h3 class="font-headline-md text-2xl text-primary mb-3">Descarga de Catálogos</h3>
+            <p class="font-body-md text-on-surface mb-6">Explora todos nuestros modelos disponibles para argollas de matrimonio y anillos de compromiso.</p>
+            <a href="#contacto" class="text-secondary font-cta-label text-cta-label uppercase tracking-widest border-b border-secondary pb-1 hover:text-primary hover:border-primary transition-colors">Descargar PDF &rarr;</a>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Contacto Section -->
+<section id="contacto" class="w-full bg-surface-container-lowest border-t border-outline-variant/30 py-section-gap">
+<div class="max-w-4xl mx-auto px-margin-mobile text-center reveal-on-scroll">
+    <h2 class="font-headline-lg-mobile md:font-headline-lg text-primary mb-6">Visítanos</h2>
+    <p class="font-body-lg text-on-surface mb-12 max-w-2xl mx-auto">Te invitamos a descubrir nuestra colección y conversar sobre tu diseño personalizado. Encuéntranos en Talca o contáctanos digitalmente.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-16">
+        <div class="flex flex-col items-center">
+            <span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="location_on">location_on</span>
+            <h4 class="font-label-caps uppercase text-primary mb-2 tracking-widest">Ubicación</h4>
+            <p class="font-body-md text-on-surface">Talca, Región del Maule<br>Chile</p>
+        </div>
+        
+        <div class="flex flex-col items-center">
+            <span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="phone_iphone">phone_iphone</span>
+            <h4 class="font-label-caps uppercase text-primary mb-2 tracking-widest">Atención Directa</h4>
+            <a href="#" class="font-body-md text-on-surface hover:text-secondary transition-colors">+56 9 XXXX XXXX</a>
+            <a href="#" class="font-body-md text-on-surface hover:text-secondary transition-colors mt-1">WhatsApp Disponible</a>
+        </div>
+        
+        <div class="flex flex-col items-center">
+            <span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="share">share</span>
+            <h4 class="font-label-caps uppercase text-primary mb-2 tracking-widest">Redes Sociales</h4>
+            <a href="https://www.instagram.com/torrealbajoyas/?hl=es-la" target="_blank" class="font-body-md text-on-surface hover:text-secondary transition-colors">Instagram</a>
+            <a href="https://www.facebook.com/torrealbajoyas.cl/" target="_blank" class="font-body-md text-on-surface hover:text-secondary transition-colors mt-1">Facebook</a>
+        </div>
+    </div>
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full py-16">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop gap-gutter w-full max-w-container-max mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="mb-4">
+    <img src="assets/logo_white.png" alt="Torrealba Joyas" class="h-24 md:h-32 w-auto object-contain">
+</div>
+<div class="font-body-md text-on-primary/60">Especialistas en joyas para novios.<br>Talca, Chile.</div>
+<div class="font-body-md text-on-primary/40 mt-8 text-sm">© 2024 TORREALBA JOYAS. TODOS LOS DERECHOS RESERVADOS.</div>
+</div>
+<div class="flex flex-col gap-4 font-label-caps text-label-caps tracking-widest">
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="#lamarca">LA MARCA</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="#coleccion">COLECCIONES</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="#servicios">SERVICIOS</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="#contacto">CONTACTO</a>
+</div>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
