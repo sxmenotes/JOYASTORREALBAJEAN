@@ -198,17 +198,17 @@ document.addEventListener("DOMContentLoaded", () => {
             currentType = btn.getAttribute('data-type');
 
             // Update Form UI based on Type
-            if (currentType === "Matrimonio" || currentType === "Talleres") {
+            if (currentType === "Matrimonio") {
                 dateFieldContainer.style.maxHeight = "100px";
                 dateFieldContainer.style.opacity = "1";
                 dateLabel.textContent = "Fecha de matrimonio";
                 nameLabel.textContent = "Nombre de ambos novios";
                 inputName.placeholder = "Ej: Valentina y Andrés";
             } else {
-                // Otras consultas
+                // Talleres y Otras consultas
                 dateFieldContainer.style.maxHeight = "0px";
                 dateFieldContainer.style.opacity = "0";
-                nameLabel.textContent = "Nombre completo";
+                nameLabel.textContent = "Nombre del/los interesado/s";
                 inputName.placeholder = "Ej: María Ignacia";
             }
         });
@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let message = `Hola Torrealba Joyas, me comunico por: *${currentType}*\n\n`;
         message += `*Nombre:* ${name}\n`;
         
-        if ((currentType === "Matrimonio" || currentType === "Talleres") && date) {
+        if (currentType === "Matrimonio" && date) {
             message += `*Fecha estimada:* ${date}\n`;
         }
 

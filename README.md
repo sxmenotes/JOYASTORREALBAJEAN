@@ -26,6 +26,10 @@ Los siguientes archivos conforman el núcleo de la aplicación web que debe ser 
 
 ## Historial de Cambios y Mejoras (Changelog)
 
+### v1.0.1 - Actualización de Correcciones Menores (26 de Agosto de 2026)
+- **Ajustes de UI en Catálogos**: Los contenedores de las fotografías de los anillos ahora adoptan una forma rectangular apaisada (más anchos que altos), optimizando y aumentando el espacio de visualización sin distorsionar las proporciones.
+- **Formulario de Contacto**: Se refinaron las opciones "Talleres" y "Otras consultas", ocultando la fecha de matrimonio (por ser innecesaria) y ajustando la etiqueta a "Nombre del/los interesado/s" para mayor claridad.
+
 El sitio ha pasado por una rigurosa arquitectura y optimización de rendimiento:
 
 - **Rediseño Premium de Landing Page**: Implementación de tarjetas estilo *bento box* con fondos de video responsivos para redirigir a las distintas páginas, mejorando la inmersión del usuario.
