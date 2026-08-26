@@ -1,0 +1,21 @@
+# Ignorar carpetas pesadas de archivos fuente
+SAMI fotos de argollas definitivas/
+VIDEOS/
+anillos_compromiso_torrealba_imagenes/
+argollas_torrealba_imagenes/
+
+# Scripts de desarrollo o compresión
+compress_media.sh
+patch_nav.py
+*.py
+*.pyc
+__pycache__/
+
+# Archivos del sistema y de agentes
+.DS_Store
+.agents/
+.gemini/
+scratch/
+
+# Ignorar páginas obsoletas si no se usan
+simulador.html

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Torrealba Joyas - Alta Joyería y Argollas de Matrimonio</title>
+<meta name="description" content="Torrealba Joyas - Especialistas en argollas de matrimonio y alta joyería para novios en Talca, Chile. Diseños únicos y talleres de orfebrería.">
+<meta property="og:title" content="Torrealba Joyas | Alta Joyería">
+<meta property="og:description" content="Descubre nuestra exclusiva colección de anillos de compromiso y argollas de matrimonio hechas a mano.">
+<meta property="og:image" content="assets/hero_bg.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css">
+<script id="tailwind-config">
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            "colors": {
+                "surface-dim": "#dadada",
+                "on-background": "#1a1c1c",
+                "outline-variant": "#c0c0c0", /* Plateado */
+                "surface-container-low": "#f3f3f4",
+                "surface-container-high": "#e8e8e8",
+                "surface": "#ffffff", /* Blanco */
+                "on-surface": "#111111", /* Negro */
+                "primary": "#111111", 
+                "on-primary": "#ffffff",
+                "secondary": "#d4af37", /* Dorado */
+                "on-secondary": "#ffffff",
+                "secondary-container": "#d4af37", /* Dorado CTA */
+                "on-secondary-container": "#ffffff",
+                "outline": "#c0c0c0", /* Plateado */
+                "background": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+            },
+            "spacing": {
+                "section-gap": "120px",
+                "margin-desktop": "80px",
+                "unit": "8px",
+                "margin-mobile": "20px",
+                "gutter": "24px",
+                "container-max": "1440px"
+            },
+            "fontFamily": {
+                "label-caps": ["Inter"],
+                "cta-label": ["Inter"],
+                "display-lg": ["Bodoni Moda"],
+                "body-lg": ["Inter"],
+                "headline-lg": ["Bodoni Moda"],
+                "display-lg-mobile": ["Bodoni Moda"],
+                "body-md": ["Inter"],
+                "headline-md": ["Bodoni Moda"]
+            },
+            "fontSize": {
+                "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                "cta-label": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }]
+            }
+        }
+    }
+}
+</script>
+</head>
+<body class="bg-background text-on-surface">
+
+<header id="main-header" class="bg-background/90 backdrop-blur-md text-primary relative w-full z-50 border-b border-outline-variant transition-all duration-300">
+<div class="relative flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit w-full max-w-container-max mx-auto h-[80px]">
+    <!-- Mobile menu button -->
+    <button id="mobile-menu-btn" class="md:hidden text-primary hover:text-secondary transition-colors duration-300">
+        <span class="material-symbols-outlined" data-icon="menu">menu</span>
+    </button>
+    
+    <!-- Desktop Navigation Left -->
+    <nav class="hidden md:flex gap-8 font-label-caps text-label-caps">
+        <a href="catalogo.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Catálogo</a>
+        <a href="orfebreria.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Orfebrería</a>
+    </nav>
+
+    <!-- Logo -->
+    <a class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center h-full py-1" href="index.html">
+        <img src="assets/logo.png" alt="Torrealba Joyas" class="h-full w-auto object-contain">
+    </a>
+
+    <!-- Desktop Navigation Right -->
+    <nav class="hidden md:flex gap-8 font-label-caps text-label-caps items-center">
+        <a href="galeria.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Galería</a>
+        <a href="quien-soy.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Quién Soy</a>
+        <a href="contacto.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Contacto</a>
+    </nav>
+    
+    <!-- Mobile right icon spacer (for centering logo) -->
+    <div class="md:hidden w-6"></div>
+</div>
+</header>
+<!-- Mobile Menu Overlay (Glassmorphism) -->
+<div id="mobile-menu" class="fixed inset-0 z-40 md:hidden flex-col justify-center items-center bg-surface/90 backdrop-blur-2xl transition-all duration-500 ease-in-out opacity-0 pointer-events-none flex">
+    <div class="flex flex-col w-full max-w-sm px-8 text-center mt-20 gap-8">
+        <a href="catalogo.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Catálogo</a>
+        <a href="orfebreria.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Orfebrería</a>
+        <a href="galeria.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Galería</a>
+        <a href="quien-soy.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Quién Soy</a>
+        <a href="contacto.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Contacto</a>
+    </div>
+</div>
+
+<main class="">
+<!-- Galería Section -->
+<section id="galeria" class="w-full bg-surface-container-lowest pt-section-gap pb-12">
+    <!-- Cabecera Universal -->
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
+        <h1 class="page-header-title">Galería interactiva</h1>
+        <p class="page-header-desc">Para que veas nuestras creaciones aún más de cerca ¡Echa un vistazo!</p>
+    </div>
+
+    <!-- Contenido Masonry Grid (Dynamic Mosaic) -->
+    <div id="gallery-mosaic-container" class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[150px] md:auto-rows-[250px] gap-4 grid-flow-dense">
+        <!-- Content gets injected here by JS -->
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-primary/95 backdrop-blur-xl transition-opacity duration-300 opacity-0">
+    <button id="lightbox-close" class="absolute top-6 right-6 text-surface hover:text-secondary transition-colors z-[210] p-2">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="relative w-full h-full max-w-7xl mx-auto p-4 md:p-12 flex items-center justify-center" id="lightbox-content-container">
+        <!-- Content gets injected here by JS -->
+    </div>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full py-16">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop gap-gutter w-full max-w-container-max mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="mb-4">
+    <a href="index.html"><img src="assets/logo_white.png" alt="Torrealba Joyas" class="h-24 md:h-32 w-auto object-contain"></a>
+</div>
+<div class="font-body-md text-on-primary/60">Especialistas en joyas para novios.<br>Talca, Chile.</div>
+<div class="font-body-md text-on-primary/40 mt-8 text-sm">© 2024 TORREALBA JOYAS. TODOS LOS DERECHOS RESERVADOS.</div>
+</div>
+<div class="flex flex-col gap-4 font-label-caps text-label-caps tracking-widest">
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="catalogo.html">CATÁLOGO</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="orfebreria.html">ORFEBRERÍA Y TALLERES</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="galeria.html">GALERÍA</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="quien-soy.html">QUIÉN SOY</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="contacto.html">CONTACTO</a>
+</div>
+</div>
+</footer>
+
+<script src="js/gallery_data.js"></script>
+<script src="js/main.js"></script>
+<script>
+// Lightbox is handled in js/main.js
+</script>
+</body>
+</html>

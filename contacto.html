@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Torrealba Joyas - Alta Joyería y Argollas de Matrimonio</title>
+<meta name="description" content="Torrealba Joyas - Especialistas en argollas de matrimonio y alta joyería para novios en Talca, Chile. Diseños únicos y talleres de orfebrería.">
+<meta property="og:title" content="Torrealba Joyas | Alta Joyería">
+<meta property="og:description" content="Descubre nuestra exclusiva colección de anillos de compromiso y argollas de matrimonio hechas a mano.">
+<meta property="og:image" content="assets/hero_bg.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css">
+<script id="tailwind-config">
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            "colors": {
+                "surface-dim": "#dadada",
+                "on-background": "#1a1c1c",
+                "outline-variant": "#c0c0c0", /* Plateado */
+                "surface-container-low": "#f3f3f4",
+                "surface-container-high": "#e8e8e8",
+                "surface": "#ffffff", /* Blanco */
+                "on-surface": "#111111", /* Negro */
+                "primary": "#111111", 
+                "on-primary": "#ffffff",
+                "secondary": "#d4af37", /* Dorado */
+                "on-secondary": "#ffffff",
+                "secondary-container": "#d4af37", /* Dorado CTA */
+                "on-secondary-container": "#ffffff",
+                "outline": "#c0c0c0", /* Plateado */
+                "background": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+            },
+            "spacing": {
+                "section-gap": "120px",
+                "margin-desktop": "80px",
+                "unit": "8px",
+                "margin-mobile": "20px",
+                "gutter": "24px",
+                "container-max": "1440px"
+            },
+            "fontFamily": {
+                "label-caps": ["Inter"],
+                "cta-label": ["Inter"],
+                "display-lg": ["Bodoni Moda"],
+                "body-lg": ["Inter"],
+                "headline-lg": ["Bodoni Moda"],
+                "display-lg-mobile": ["Bodoni Moda"],
+                "body-md": ["Inter"],
+                "headline-md": ["Bodoni Moda"]
+            },
+            "fontSize": {
+                "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                "cta-label": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }]
+            }
+        }
+    }
+}
+</script>
+</head>
+<body class="bg-background text-on-surface">
+
+<header id="main-header" class="bg-background/90 backdrop-blur-md text-primary relative w-full z-50 border-b border-outline-variant transition-all duration-300">
+<div class="relative flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit w-full max-w-container-max mx-auto h-[80px]">
+    <!-- Mobile menu button -->
+    <button id="mobile-menu-btn" class="md:hidden text-primary hover:text-secondary transition-colors duration-300">
+        <span class="material-symbols-outlined" data-icon="menu">menu</span>
+    </button>
+    
+    <!-- Desktop Navigation Left -->
+    <nav class="hidden md:flex gap-8 font-label-caps text-label-caps">
+        <a href="catalogo.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Catálogo</a>
+        <a href="orfebreria.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Orfebrería y Talleres</a>
+    </nav>
+
+    <!-- Logo -->
+    <a class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center h-full py-1" href="index.html">
+        <img src="assets/logo.png" alt="Torrealba Joyas" class="h-full w-auto object-contain">
+    </a>
+
+    <!-- Desktop Navigation Right -->
+    <nav class="hidden md:flex gap-8 font-label-caps text-label-caps items-center">
+        <a href="galeria.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Galería</a>
+        <a href="quien-soy.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Quién Soy</a>
+        <a href="contacto.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Contacto</a>
+    </nav>
+    
+    <!-- Mobile right icon spacer (for centering logo) -->
+    <div class="md:hidden w-6"></div>
+</div>
+</header>
+<!-- Mobile Menu Overlay (Glassmorphism) -->
+<div id="mobile-menu" class="fixed inset-0 z-40 md:hidden flex-col justify-center items-center bg-surface/90 backdrop-blur-2xl transition-all duration-500 ease-in-out opacity-0 pointer-events-none flex">
+    <div class="flex flex-col w-full max-w-sm px-8 text-center mt-20 gap-8">
+        <a href="catalogo.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Catálogo</a>
+        <a href="orfebreria.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Orfebrería y Talleres</a>
+        <a href="galeria.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Galería</a>
+        <a href="quien-soy.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Quién Soy</a>
+        <a href="contacto.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Contacto</a>
+    </div>
+</div>
+
+<main class="">
+<!-- Contacto Section -->
+<section id="contacto" class="w-full bg-surface-container-lowest py-section-gap">
+<div class="max-w-4xl mx-auto px-margin-mobile text-center">
+    <h1 class="page-header-title">Contacto y Visitas</h1>
+    <p class="page-header-desc">Te invitamos a descubrir nuestra colección y conversar sobre tu diseño personalizado. Encuéntranos en Talca o contáctanos digitalmente.</p>
+    
+    <!-- Formulario Dinámico Cálido y Amigable -->
+    <div class="max-w-4xl mx-auto bg-surface shadow-xl reveal-on-scroll flex flex-col md:flex-row overflow-hidden border border-outline-variant/20">
+        
+        <!-- Columna de Mensaje Acogedor (Izquierda) -->
+        <div class="md:w-5/12 bg-surface-container-lowest p-10 md:p-14 flex flex-col justify-center border-b md:border-b-0 md:border-r border-outline-variant/30">
+            <h3 class="font-headline-lg text-3xl md:text-4xl text-primary mb-6 italic font-serif">Será un placer<br>atenderte.</h3>
+            <p class="font-body-lg text-on-surface/80 leading-relaxed mb-8">Detrás de cada joya hay una historia hermosa. Cuéntanos qué imaginas y te acompañaremos en todo el proceso de hacerla realidad.</p>
+            <div class="mt-auto hidden md:block">
+                <img src="assets/logo.png" alt="Torrealba Joyas" class="h-16 opacity-50 grayscale">
+            </div>
+        </div>
+
+        <!-- Columna del Formulario (Derecha) -->
+        <div class="md:w-7/12 p-10 md:p-14 text-left bg-surface">
+            <!-- Selectores de Tipo de Consulta -->
+            <div class="flex flex-col sm:flex-row gap-2 mb-10 border-b border-outline-variant/30 pb-4">
+                <button type="button" class="type-btn active flex-1 text-primary font-label-caps uppercase text-sm tracking-widest pb-2 border-b-2 border-primary transition-all duration-300" data-type="Matrimonio">Matrimonio</button>
+                <button type="button" class="type-btn flex-1 text-on-surface/50 font-label-caps uppercase text-sm tracking-widest pb-2 border-b-2 border-transparent hover:text-primary transition-all duration-300" data-type="Talleres">Talleres</button>
+                <button type="button" class="type-btn flex-1 text-on-surface/50 font-label-caps uppercase text-sm tracking-widest pb-2 border-b-2 border-transparent hover:text-primary transition-all duration-300" data-type="Otras consultas">Otras consultas</button>
+            </div>
+
+            <form id="contact-form" class="flex flex-col gap-8">
+                <!-- Campo de Fecha (Ocultable) -->
+                <div id="date-field-container" class="flex flex-col transition-all duration-500 overflow-hidden max-h-[100px] opacity-100 relative">
+                    <label id="date-label" class="font-label-caps text-primary/70 text-xs tracking-widest mb-1 uppercase">Fecha estimada de boda</label>
+                    <input type="date" id="contact-date" class="border-b border-outline-variant/50 py-3 focus:border-primary focus:ring-0 outline-none w-full bg-transparent text-primary transition-colors font-body-lg">
+                </div>
+
+                <!-- Campo de Nombre (Etiqueta dinámica) -->
+                <div class="flex flex-col transition-all duration-300 relative">
+                    <label id="name-label" class="font-label-caps text-primary/70 text-xs tracking-widest mb-1 uppercase">Nombre de ambos novios</label>
+                    <input type="text" id="contact-name" class="border-b border-outline-variant/50 py-3 focus:border-primary focus:ring-0 outline-none w-full bg-transparent placeholder-on-surface/30 text-primary transition-colors font-body-lg" placeholder="Ej: Valentina y Andrés">
+                </div>
+
+                <!-- Campo de Descripción -->
+                <div class="flex flex-col relative">
+                    <label class="font-label-caps text-primary/70 text-xs tracking-widest mb-1 uppercase">¿Qué tienes en mente?</label>
+                    <textarea id="contact-desc" rows="3" class="border-b border-outline-variant/50 py-3 focus:border-primary focus:ring-0 outline-none w-full bg-transparent placeholder-on-surface/30 text-primary transition-colors font-body-lg resize-none" placeholder="Cuéntanos los detalles de tu idea..."></textarea>
+                </div>
+
+                <!-- Botón WhatsApp -->
+                <div class="mt-4 text-right">
+                    <button type="button" id="btn-whatsapp" class="inline-flex justify-center items-center gap-3 bg-primary text-on-primary font-cta-label px-8 py-4 uppercase tracking-widest hover:bg-secondary transition-colors group w-full md:w-auto">
+                        <span>Iniciar conversación</span>
+                        <svg class="w-5 h-5 fill-current transform group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const typeBtns = document.querySelectorAll('.type-btn');
+    const dateFieldContainer = document.getElementById('date-field-container');
+    const dateLabel = document.getElementById('date-label');
+    const nameLabel = document.getElementById('name-label');
+    const inputName = document.getElementById('contact-name');
+    const inputDate = document.getElementById('contact-date');
+    const inputDesc = document.getElementById('contact-desc');
+    const btnWhatsapp = document.getElementById('btn-whatsapp');
+
+    let currentType = "Matrimonio";
+
+    typeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update UI for buttons (Underline style instead of block)
+            typeBtns.forEach(b => {
+                b.classList.remove('text-primary', 'border-primary');
+                b.classList.add('text-on-surface/50', 'border-transparent');
+            });
+            btn.classList.add('text-primary', 'border-primary');
+            btn.classList.remove('text-on-surface/50', 'border-transparent');
+
+            currentType = btn.getAttribute('data-type');
+
+            // Update Form UI based on Type
+            if (currentType === "Matrimonio" || currentType === "Talleres") {
+                dateFieldContainer.style.maxHeight = "100px";
+                dateFieldContainer.style.opacity = "1";
+                dateLabel.textContent = "Fecha de matrimonio";
+                nameLabel.textContent = "Nombre de ambos novios";
+                inputName.placeholder = "Ej: Valentina y Andrés";
+            } else {
+                // Otras consultas
+                dateFieldContainer.style.maxHeight = "0px";
+                dateFieldContainer.style.opacity = "0";
+                nameLabel.textContent = "Nombre completo";
+                inputName.placeholder = "Ej: María Ignacia";
+            }
+        });
+    });
+
+    btnWhatsapp.addEventListener('click', () => {
+        const name = inputName.value.trim();
+        const date = inputDate.value;
+        const desc = inputDesc.value.trim();
+
+        if (!name || !desc) {
+            alert("Por favor, completa tu nombre y la descripción de tu idea para poder acompañarte mejor.");
+            return;
+        }
+
+        let message = `Hola Torrealba Joyas, me comunico por: *${currentType}*\n\n`;
+        message += `*Nombre:* ${name}\n`;
+        
+        if ((currentType === "Matrimonio" || currentType === "Talleres") && date) {
+            message += `*Fecha estimada:* ${date}\n`;
+        }
+
+        message += `\n*Consulta:*\n${desc}`;
+
+        const phone = "56950082045";
+        const encodedMsg = encodeURIComponent(message);
+        window.open(`https://wa.me/${phone}?text=${encodedMsg}`, "_blank");
+    });
+});
+</script>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full py-16">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop gap-gutter w-full max-w-container-max mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="mb-4">
+    <a href="index.html"><img src="assets/logo_white.png" alt="Torrealba Joyas" class="h-24 md:h-32 w-auto object-contain"></a>
+</div>
+<div class="font-body-md text-on-primary/60">Especialistas en joyas para novios.<br>Talca, Chile.</div>
+<div class="font-body-md text-on-primary/40 mt-8 text-sm">© 2024 TORREALBA JOYAS. TODOS LOS DERECHOS RESERVADOS.</div>
+</div>
+<div class="flex flex-col gap-4 font-label-caps text-label-caps tracking-widest">
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="catalogo.html">CATÁLOGO</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="orfebreria.html">ORFEBRERÍA Y TALLERES</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="galeria.html">GALERÍA</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="quien-soy.html">QUIÉN SOY</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="contacto.html">CONTACTO</a>
+</div>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

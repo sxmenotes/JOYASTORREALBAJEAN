@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Torrealba Joyas - Alta Joyería y Argollas de Matrimonio</title>
+<meta name="description" content="Torrealba Joyas - Especialistas en argollas de matrimonio y alta joyería para novios en Talca, Chile. Diseños únicos y talleres de orfebrería.">
+<meta property="og:title" content="Torrealba Joyas | Alta Joyería">
+<meta property="og:description" content="Descubre nuestra exclusiva colección de anillos de compromiso y argollas de matrimonio hechas a mano.">
+<meta property="og:image" content="assets/hero_bg.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css">
+<script id="tailwind-config">
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            "colors": {
+                "surface-dim": "#dadada",
+                "on-background": "#1a1c1c",
+                "outline-variant": "#c0c0c0", /* Plateado */
+                "surface-container-low": "#f3f3f4",
+                "surface-container-high": "#e8e8e8",
+                "surface": "#ffffff", /* Blanco */
+                "on-surface": "#111111", /* Negro */
+                "primary": "#111111", 
+                "on-primary": "#ffffff",
+                "secondary": "#d4af37", /* Dorado */
+                "on-secondary": "#ffffff",
+                "secondary-container": "#d4af37", /* Dorado CTA */
+                "on-secondary-container": "#ffffff",
+                "outline": "#c0c0c0", /* Plateado */
+                "background": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+            },
+            "spacing": {
+                "section-gap": "120px",
+                "margin-desktop": "80px",
+                "unit": "8px",
+                "margin-mobile": "20px",
+                "gutter": "24px",
+                "container-max": "1440px"
+            },
+            "fontFamily": {
+                "label-caps": ["Inter"],
+                "cta-label": ["Inter"],
+                "display-lg": ["Bodoni Moda"],
+                "body-lg": ["Inter"],
+                "headline-lg": ["Bodoni Moda"],
+                "display-lg-mobile": ["Bodoni Moda"],
+                "body-md": ["Inter"],
+                "headline-md": ["Bodoni Moda"]
+            },
+            "fontSize": {
+                "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                "cta-label": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }]
+            }
+        }
+    }
+}
+</script>
+</head>
+<body class="bg-background text-on-surface">
+
+<header id="main-header" class="bg-background/90 backdrop-blur-md text-primary relative w-full z-50 border-b border-outline-variant transition-all duration-300">
+<div class="relative flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit w-full max-w-container-max mx-auto h-[80px]">
+    <!-- Mobile menu button -->
+    <button id="mobile-menu-btn" class="md:hidden text-primary hover:text-secondary transition-colors duration-300">
+        <span class="material-symbols-outlined" data-icon="menu">menu</span>
+    </button>
+    
+    <!-- Desktop Navigation Left -->
+    <nav class="hidden md:flex gap-8 font-label-caps text-label-caps">
+        <a href="catalogo.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Catálogo</a>
+        <a href="orfebreria.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Orfebrería y Talleres</a>
+    </nav>
+
+    <!-- Logo -->
+    <a class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center h-full py-1" href="index.html">
+        <img src="assets/logo.png" alt="Torrealba Joyas" class="h-full w-auto object-contain">
+    </a>
+
+    <!-- Desktop Navigation Right -->
+    <nav class="hidden md:flex gap-8 font-label-caps text-label-caps items-center">
+        <a href="galeria.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Galería</a>
+        <a href="quien-soy.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Quién Soy</a>
+        <a href="contacto.html" class="text-primary hover:text-secondary transition-colors duration-300 uppercase">Contacto</a>
+    </nav>
+    
+    <!-- Mobile right icon spacer (for centering logo) -->
+    <div class="md:hidden w-6"></div>
+</div>
+</header>
+<!-- Mobile Menu Overlay (Glassmorphism) -->
+<div id="mobile-menu" class="fixed inset-0 z-40 md:hidden flex-col justify-center items-center bg-surface/90 backdrop-blur-2xl transition-all duration-500 ease-in-out opacity-0 pointer-events-none flex">
+    <div class="flex flex-col w-full max-w-sm px-8 text-center mt-20 gap-8">
+        <a href="catalogo.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Catálogo</a>
+        <a href="orfebreria.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Orfebrería y Talleres</a>
+        <a href="galeria.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Galería</a>
+        <a href="quien-soy.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Quién Soy</a>
+        <a href="contacto.html" class="text-primary font-headline-md text-3xl hover:text-secondary transition-colors">Contacto</a>
+    </div>
+</div>
+
+<main class="">
+<!-- Orfebrería y Talleres Section -->
+<section id="orfebreria" class="w-full bg-surface-container-lowest pt-section-gap pb-12">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+        <h1 class="page-header-title">Academia Torrealba Joyas</h1>
+        <p class="page-header-desc">Donde aprender también es crear belleza</p>
+</div>
+
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
+    <div class="order-2 md:order-1 flex gap-4 md:gap-8 justify-center items-start reveal-on-scroll">
+        <!-- Video 1 Wrapper -->
+        <div class="relative w-1/2 max-w-[300px]">
+            <!-- Sutiles líneas doradas abajo -->
+            <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
+            <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-1/4 h-[1px] bg-secondary/40"></div>
+            <div class="h-[400px] md:h-[650px] w-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10">
+                <video src="assets/taller_intro_video.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"></video>
+            </div>
+        </div>
+        <!-- Video 2 Wrapper -->
+        <div class="relative w-1/2 max-w-[300px] mt-12 md:mt-24">
+            <!-- Sutiles líneas doradas arriba -->
+            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
+            <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-1/4 h-[1px] bg-secondary/40"></div>
+            <div class="h-[400px] md:h-[650px] w-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10">
+                <video src="assets/taller_intro_video_2.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"></video>
+            </div>
+        </div>
+    </div>
+    <div class="order-1 md:order-2 flex flex-col justify-center reveal-on-scroll">
+        <h2 class="font-headline-md text-3xl text-primary mb-6">El Arte de Crear</h2>
+        <p class="font-body-lg text-on-surface mb-6">La orfebrería es mucho más que aprender a trabajar un metal: es descubrir el arte de crear, transformar y dar vida a una pieza hecha con tus propias manos.</p>
+        <p class="font-body-lg text-on-surface mb-6">En las clases, los alumnos se introducen en el maravilloso mundo de la joyería, aprendiendo técnicas y procesos que les permiten desarrollar su creatividad, precisión y sensibilidad artística.</p>
+        <p class="font-body-lg text-on-surface mb-6">Durante las clases podrán conocer y practicar el proceso de creación de joyas, desde la idea inicial y el diseño, hasta la elaboración y terminación de una pieza.</p>
+    </div>
+</div>
+
+<div class="bg-surface-container-low p-8 md:p-16 mb-24 reveal-on-scroll border border-outline-variant/30">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h2 class="font-headline-md text-3xl text-primary mb-6">Despierta tu Pasión por la Orfebrería</h2>
+            <p class="font-body-lg text-on-surface mb-6">Es un espacio pensado tanto para quienes desean iniciarse en la orfebrería, como para quienes buscan desarrollar nuevas habilidades, perfeccionar su técnica y convertir su pasión por las joyas en un oficio.</p>
+            <p class="font-body-lg text-on-surface mb-6">Cada pieza creada lleva algo único: tu creatividad, tu dedicación y tus propias manos.<br>Aprende orfebrería. Crea tus propias joyas. Transforma una idea en una pieza única.</p>
+            <p class="font-body-lg text-on-surface font-semibold mb-6">Más que una clase, es una experiencia donde la técnica y tu imaginación se funden para dar vida a una joya que perdurará para siempre.</p>
+            <button id="open-workshop-btn" class="inline-flex items-center justify-center border border-primary text-primary font-cta-label text-cta-label px-8 py-4 uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-300">Solicitar Información</button>
+        </div>
+        <div class="h-[400px] md:h-[600px] border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl">
+             <video src="assets/taller_intro_video_3.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"></video>
+        </div>
+    </div>
+</div>
+
+<div class="reveal-on-scroll mb-24">
+    <h3 class="text-center font-headline-md text-3xl md:text-4xl text-primary mb-16 max-w-4xl mx-auto px-4">¡Mira lo que puedes hacer y aprender en nuestro taller de orfebrería!</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-12 md:gap-8 justify-items-center">
+        <!-- Video 1 -->
+        <div class="relative w-full max-w-[260px] aspect-[9/16]">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
+            <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
+            <div class="w-full h-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10 video-slider bg-surface">
+                <video src="assets/gal_vid_1.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
+                <video src="assets/gal_vid_2.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
+            </div>
+        </div>
+        <!-- Video 2 -->
+        <div class="relative w-full max-w-[260px] aspect-[9/16] md:mt-12">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
+            <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
+            <div class="w-full h-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10 video-slider bg-surface">
+                <video src="assets/gal_vid_3.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
+                <video src="assets/gal_vid_4.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
+            </div>
+        </div>
+        <!-- Video 3 -->
+        <div class="relative w-full max-w-[260px] aspect-[9/16]">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
+            <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
+            <div class="w-full h-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10 video-slider bg-surface">
+                <video src="assets/gal_vid_5.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
+                <video src="assets/gal_vid_6.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
+            </div>
+        </div>
+        <!-- Video 4 -->
+        <div class="relative w-full max-w-[260px] aspect-[9/16] md:mt-12">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
+            <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
+            <div class="w-full h-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10 video-slider bg-surface">
+                <video src="assets/gal_vid_7.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
+                <video src="assets/gal_vid_8.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Workshop Info Modal -->
+<div id="workshop-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center px-4 md:px-0">
+    <div class="absolute inset-0 bg-primary/80 backdrop-blur-sm" id="workshop-modal-overlay"></div>
+    <div class="relative bg-surface w-full max-w-4xl shadow-2xl flex flex-col md:flex-row overflow-hidden border border-outline-variant/20 max-h-[90vh] overflow-y-auto">
+
+        <!-- Botón Cerrar -->
+        <button id="close-workshop-modal" class="absolute top-4 right-4 md:top-6 md:right-6 text-primary hover:text-secondary transition-colors z-10 bg-surface/80 p-1 md:bg-transparent backdrop-blur-md md:backdrop-blur-none">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+
+        <!-- Columna Izquierda -->
+        <div class="md:w-5/12 bg-surface-container-lowest p-8 md:p-10 flex flex-col justify-center border-b md:border-b-0 md:border-r border-outline-variant/30 relative">
+            <span class="font-label-caps text-secondary tracking-widest uppercase mb-4 text-xs">Clases y Talleres</span>
+            <h3 class="font-headline-lg text-3xl md:text-4xl text-primary mb-4 italic font-serif leading-tight">Solicitar Información</h3>
+            <p class="font-body-lg text-on-surface/80 leading-relaxed mb-8">Da el primer paso en el arte de la orfebrería. Cuéntanos qué te gustaría aprender y te enviaremos toda la información sobre fechas, valores y disponibilidad.</p>
+            <div class="mt-auto hidden md:block">
+                <img src="assets/logo.png" alt="Torrealba Joyas" class="h-12 opacity-50 grayscale">
+            </div>
+        </div>
+
+        <!-- Columna Derecha (Formulario) -->
+        <div class="md:w-7/12 p-6 md:p-10 text-left bg-surface flex flex-col justify-center">
+            <form id="workshop-form" class="flex flex-col gap-4">
+                <div class="border-b border-outline-variant/30 pb-2 mb-2">
+                    <h4 class="font-headline-sm text-xl text-primary italic font-serif">Tus Datos</h4>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex flex-col relative">
+                        <label class="font-label-caps text-primary/70 text-xs tracking-widest mb-1 uppercase">Nombre</label>
+                        <input type="text" id="ws-name" required class="border-b border-outline-variant/50 py-2 focus:border-primary focus:ring-0 outline-none w-full bg-transparent placeholder-on-surface/30 text-primary transition-colors font-body-lg" placeholder="Tu nombre">
+                    </div>
+                    <div class="flex flex-col relative">
+                        <label class="font-label-caps text-primary/70 text-xs tracking-widest mb-1 uppercase">Email</label>
+                        <input type="email" id="ws-email" required class="border-b border-outline-variant/50 py-2 focus:border-primary focus:ring-0 outline-none w-full bg-transparent placeholder-on-surface/30 text-primary transition-colors font-body-lg" placeholder="tu@email.com">
+                    </div>
+                </div>
+
+                <div class="flex flex-col relative mt-2">
+                    <label class="font-label-caps text-primary/70 text-xs tracking-widest mb-1 uppercase">¿Qué te gustaría aprender?</label>
+                    <textarea id="ws-comments" rows="3" required class="border-b border-outline-variant/50 py-2 focus:border-primary focus:ring-0 outline-none w-full bg-transparent placeholder-on-surface/30 text-primary transition-colors font-body-lg resize-none" placeholder="Cuéntanos si tienes experiencia previa o qué técnicas te interesan..."></textarea>
+                </div>
+
+                <!-- Botón WhatsApp -->
+                <div class="mt-6 text-right">
+                    <button type="submit" class="inline-flex justify-center items-center gap-3 bg-primary text-on-primary font-cta-label px-8 py-4 uppercase tracking-widest hover:bg-secondary transition-colors group w-full md:w-auto">
+                        <span>Enviar por WhatsApp</span>
+                        <svg class="w-5 h-5 fill-current transform group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full py-16">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop gap-gutter w-full max-w-container-max mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="mb-4">
+    <a href="index.html"><img src="assets/logo_white.png" alt="Torrealba Joyas" class="h-24 md:h-32 w-auto object-contain"></a>
+</div>
+<div class="font-body-md text-on-primary/60">Especialistas en joyas para novios.<br>Talca, Chile.</div>
+<div class="font-body-md text-on-primary/40 mt-8 text-sm">© 2024 TORREALBA JOYAS. TODOS LOS DERECHOS RESERVADOS.</div>
+</div>
+<div class="flex flex-col gap-4 font-label-caps text-label-caps tracking-widest">
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="catalogo.html">CATÁLOGO</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="orfebreria.html">ORFEBRERÍA Y TALLERES</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="galeria.html">GALERÍA</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="quien-soy.html">QUIÉN SOY</a>
+<a class="text-on-primary hover:text-secondary transition-colors duration-300" href="contacto.html">CONTACTO</a>
+</div>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
