@@ -31,6 +31,7 @@ Los siguientes archivos conforman el núcleo de la aplicación web que debe ser 
 - **Refinamiento de Schema Local**: Se actualizó el JSON-LD en `index.html` de `JewelryStore` a `LocalBusiness`, integrando palabras clave de SEO local (Talca, Curicó, Región del Maule) y enfatizando el concepto de "Joyería de autor".
 - **Corrección de FOUT**: Se solucionó el "Flash of Unstyled Text" en los íconos de Material Symbols cambiando su estrategia de carga a `display=block`, evitando que la palabra "menu" se lea distorsionada en móviles durante el renderizado inicial.
 - **Favicon de Autor**: Se aisló el isologo dorado del logotipo principal para generar un nuevo `favicon.png` e `.ico` optimizado.
+- **Analíticas de Rendimiento**: Integración nativa del script de Vercel Speed Insights en todas las páginas para monitorear métricas y estadísticas de Core Web Vitals en producción.
 
 ### v1.0.2 - Actualización de Arquitectura y SEO Técnico (26 de Agosto de 2026)
 - **Optimización On-Page y Metadatos**: Se personalizaron los metadatos (`<title>`, `<meta name="description">`) en todas las páginas para evitar contenido duplicado y atacar palabras clave específicas por servicio (argollas, talleres, catálogo). Se añadieron etiquetas `canonical`.
