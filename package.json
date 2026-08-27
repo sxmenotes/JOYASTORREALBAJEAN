@@ -1,0 +1,20 @@
+{
+  "name": "torrealba-joyas",
+  "version": "1.0.0",
+  "description": "Torrealba Joyas - Alta joyería y diseño exclusivo de anillos en Talca",
+  "private": true,
+  "scripts": {
+    "dev": "npx http-server . -p 3000",
+    "build": "echo 'Static site - no build step required'",
+    "start": "npx http-server . -p 8080"
+  },
+  "keywords": [
+    "jewelry",
+    "wedding",
+    "rings",
+    "talca",
+    "chile"
+  ],
+  "author": "Jean Torrealba",
+  "license": "UNLICENSED"
+}
