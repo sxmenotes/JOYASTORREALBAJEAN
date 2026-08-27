@@ -234,38 +234,96 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { rootMargin: "150px", threshold: 0.1 });
 
     if (galleryMosaicContainer && typeof galleryData !== 'undefined') {
-        galleryData.forEach((item, index) => {
-            let spanClasses = "";
-            if (index % 9 === 0) spanClasses = "md:col-span-2 md:row-span-2";
-            else if (index % 7 === 0) spanClasses = "md:row-span-2";
-            else if (index % 11 === 0) spanClasses = "md:col-span-2";
+        
+        function renderGallery(filterType) {
+            galleryMosaicContainer.innerHTML = '';
             
-            const wrapper = document.createElement("div");
-            wrapper.className = `bg-surface-dim rounded-2xl overflow-hidden cursor-pointer group relative border border-secondary/30 lightbox-trigger ${spanClasses}`;
-            wrapper.setAttribute("data-type", item.type);
-            wrapper.setAttribute("data-src", item.src);
-            
-            if (item.type === 'image') {
-                wrapper.innerHTML = `
-                    <img data-src="${item.src}" alt="Joya Torrealba" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 pointer-events-none">
-                    <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                        <span class="material-symbols-outlined text-surface text-4xl">zoom_in</span>
-                    </div>
-                `;
-            } else {
-                // preload="none" garantiza que no se descargue NADA de red por defecto
-                wrapper.innerHTML = `
-                    <video data-src="${item.src}" preload="none" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 pointer-events-none" loop muted playsinline></video>
-                    <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                        <span class="material-symbols-outlined text-surface text-4xl">play_circle</span>
-                    </div>
-                `;
+            const filteredData = galleryData.filter(item => item.type === filterType);
+
+            filteredData.forEach((item, index) => {
+                let spanClasses = "";
+                if (index % 9 === 0) spanClasses = "md:col-span-2 md:row-span-2";
+                else if (index % 7 === 0) spanClasses = "md:row-span-2";
+                else if (index % 11 === 0) spanClasses = "md:col-span-2";
+                
+                const wrapper = document.createElement("div");
+                wrapper.className = `bg-surface-dim rounded-2xl overflow-hidden cursor-pointer group relative border border-secondary/30 lightbox-trigger ${spanClasses}`;
+                wrapper.setAttribute("data-type", item.type);
+                wrapper.setAttribute("data-src", item.src);
+                
+                if (item.type === 'image') {
+                    wrapper.innerHTML = `
+                        <img data-src="${item.src}" alt="Joya Torrealba" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 pointer-events-none">
+                        <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+                            <span class="material-symbols-outlined text-surface text-4xl">zoom_in</span>
+                        </div>
+                    `;
+                } else {
+                    // preload="none" garantiza que no se descargue NADA de red por defecto
+                    wrapper.innerHTML = `
+                        <video data-src="${item.src}" preload="none" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 pointer-events-none" loop muted playsinline></video>
+                        <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+                            <span class="material-symbols-outlined text-surface text-4xl">play_circle</span>
+                        </div>
+                    `;
+                }
+                
+                galleryMosaicContainer.appendChild(wrapper);
+                // Observamos todos los items para el true lazy load
+                mediaObserver.observe(wrapper);
+            });
+        }
+
+        // Initialize with images by default
+        renderGallery('image');
+
+        // --- Gallery Tabs Logic ---
+        const galleryTabs = document.querySelectorAll("#gallery-tabs button");
+        const gallerySlider = document.getElementById("gallery-tab-slider");
+        
+        if (galleryTabs.length > 0 && gallerySlider) {
+            // Inicializar tamaño y posición del slider
+            const activeTab = document.querySelector("#gallery-tabs button.text-on-primary");
+            if (activeTab) {
+                gallerySlider.style.width = activeTab.offsetWidth + "px";
+                gallerySlider.style.transform = `translateX(${activeTab.offsetLeft - 4}px)`;
             }
             
-            galleryMosaicContainer.appendChild(wrapper);
-            // Observamos todos los items para el true lazy load
-            mediaObserver.observe(wrapper);
-        });
+            window.addEventListener('resize', () => {
+                const currentActiveTab = document.querySelector("#gallery-tabs button.text-on-primary");
+                if (currentActiveTab) {
+                    gallerySlider.style.width = currentActiveTab.offsetWidth + "px";
+                    gallerySlider.style.transform = `translateX(${currentActiveTab.offsetLeft - 4}px)`;
+                }
+            });
+            
+            galleryTabs.forEach(tab => {
+                tab.addEventListener("click", () => {
+                    const target = tab.getAttribute("data-target");
+                    if (tab.classList.contains("text-on-primary")) return;
+                    
+                    // Animar Slider
+                    gallerySlider.style.width = tab.offsetWidth + "px";
+                    gallerySlider.style.transform = `translateX(${tab.offsetLeft - 4}px)`;
+                    
+                    // Cambiar clases activas
+                    galleryTabs.forEach(t => {
+                        t.classList.remove("text-on-primary");
+                        t.classList.add("text-on-surface");
+                    });
+                    tab.classList.remove("text-on-surface");
+                    tab.classList.add("text-on-primary");
+                    
+                    // Renderizar nueva categoría con pequeña animación
+                    galleryMosaicContainer.classList.add("opacity-0", "translate-y-4", "transition-all", "duration-300");
+                    
+                    setTimeout(() => {
+                        renderGallery(target);
+                        galleryMosaicContainer.classList.remove("opacity-0", "translate-y-4");
+                    }, 300);
+                });
+            });
+        }
     }
 
     // --- Lightbox Galería ---
@@ -273,7 +331,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lightboxModal) {
         const lightboxContainer = document.getElementById("lightbox-content-container");
         const lightboxCloseBtn = document.getElementById("lightbox-close");
-        const triggers = document.querySelectorAll(".lightbox-trigger");
 
         function openLightbox(type, src) {
             lightboxContainer.innerHTML = '';
@@ -313,13 +370,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 300);
         }
 
-        triggers.forEach(trigger => {
-            trigger.addEventListener("click", () => {
-                const type = trigger.getAttribute("data-type");
-                const src = trigger.getAttribute("data-src");
-                openLightbox(type, src);
+        // Event delegation for dynamically added triggers
+        if (galleryMosaicContainer) {
+            galleryMosaicContainer.addEventListener("click", (e) => {
+                const trigger = e.target.closest(".lightbox-trigger");
+                if (trigger) {
+                    const type = trigger.getAttribute("data-type");
+                    const src = trigger.getAttribute("data-src");
+                    openLightbox(type, src);
+                }
             });
-        });
+        }
 
         lightboxCloseBtn?.addEventListener("click", closeLightbox);
         

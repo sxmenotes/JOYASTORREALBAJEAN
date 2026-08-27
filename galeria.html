@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet"/>
 <link rel="stylesheet" href="css/styles.css">
 <script id="tailwind-config">
 tailwind.config = {
@@ -136,6 +136,24 @@ tailwind.config = {
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
         <h1 class="page-header-title">Galería interactiva</h1>
         <p class="page-header-desc">Para que veas nuestras creaciones aún más de cerca ¡Echa un vistazo!</p>
+
+        <!-- Toggle Tabs -->
+        <div class="relative flex md:inline-flex w-[90%] md:w-auto max-w-[340px] md:max-w-none mx-auto bg-surface-dim rounded-full p-1 border border-outline/30 mt-8"
+            id="gallery-tabs">
+            <div id="gallery-tab-slider"
+                class="absolute top-1 bottom-1 left-1 bg-primary rounded-full transition-all duration-300 ease-out shadow-md">
+            </div>
+            <button
+                class="flex-1 md:flex-none relative z-10 px-2 md:px-8 py-3 rounded-full font-label-caps uppercase tracking-widest text-[11px] md:text-sm transition-colors text-on-primary"
+                data-target="image">
+                Fotos
+            </button>
+            <button
+                class="flex-1 md:flex-none relative z-10 px-2 md:px-8 py-3 rounded-full font-label-caps uppercase tracking-widest text-[11px] md:text-sm transition-colors text-on-surface"
+                data-target="video">
+                Videos
+            </button>
+        </div>
     </div>
 
     <!-- Contenido Masonry Grid (Dynamic Mosaic) -->
