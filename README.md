@@ -26,6 +26,13 @@ Los siguientes archivos conforman el núcleo de la aplicación web que debe ser 
 
 ## Historial de Cambios y Mejoras (Changelog)
 
+### v1.0.2 - Actualización de Arquitectura y SEO Técnico (26 de Agosto de 2026)
+- **Optimización On-Page y Metadatos**: Se personalizaron los metadatos (`<title>`, `<meta name="description">`) en todas las páginas para evitar contenido duplicado y atacar palabras clave específicas por servicio (argollas, talleres, catálogo). Se añadieron etiquetas `canonical`.
+- **Estructura de Datos (Schema.org)**: Inyección de JSON-LD (`JewelryStore`) en la página principal para enriquecer los resultados de búsqueda de Google con información de ubicación (Talca, Maule), teléfono y redes sociales.
+- **Consolidación de SEO Local y NAP**: Reestructuración del `footer` en todo el sitio para incluir un bloque dedicado de contacto y ubicación, y otro de redes sociales, asegurando la consistencia NAP (Name, Address, Phone) requerida por los motores de búsqueda.
+- **Rendimiento de Imágenes**: Implementación de `loading="lazy"` en imágenes secundarias y revisión de atributos `alt` para mejorar la accesibilidad y Core Web Vitals.
+- **Indexación y Rastreo**: Creación y configuración de archivos raíz `robots.txt` y `sitemap.xml` para acelerar la correcta indexación de todo el sitio.
+
 ### v1.0.1 - Actualización de Correcciones Menores (26 de Agosto de 2026)
 - **Ajustes de UI en Catálogos**: Los contenedores de las fotografías de los anillos ahora adoptan una forma rectangular apaisada (más anchos que altos), optimizando y aumentando el espacio de visualización sin distorsionar las proporciones.
 - **Formulario de Contacto**: Se refinaron las opciones "Talleres" y "Otras consultas", ocultando la fecha de matrimonio (por ser innecesaria) y ajustando la etiqueta a "Nombre del/los interesado/s" para mayor claridad.
