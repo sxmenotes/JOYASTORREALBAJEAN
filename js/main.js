@@ -177,13 +177,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const name = document.getElementById("ws-name").value.trim();
             const email = document.getElementById("ws-email").value.trim();
             const comments = document.getElementById("ws-comments").value.trim();
+            const region = document.getElementById("ws-region").value;
+            const city = document.getElementById("ws-city").value;
 
             const phone = "56950082045";
             
             let message = `¡Hola! Me gustaría solicitar información sobre las clases y talleres de orfebrería.%0A%0A`;
             message += `*Mis datos:*%0A`;
             message += `- Nombre: ${name}%0A`;
-            message += `- Email: ${email}%0A%0A`;
+            message += `- Email: ${email}%0A`;
+            message += `- Ubicación: ${city}, ${region}%0A%0A`;
             message += `*Lo que me gustaría aprender:*%0A${comments}`;
 
             const whatsappUrl = `https://wa.me/${phone}?text=${message}`;

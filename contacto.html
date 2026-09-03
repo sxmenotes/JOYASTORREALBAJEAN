@@ -176,6 +176,22 @@ tailwind.config = {
                     <input type="text" id="contact-name" class="border-b border-outline-variant/50 py-3 focus:border-primary focus:ring-0 outline-none w-full bg-transparent placeholder-on-surface/30 text-primary transition-colors font-body-lg" placeholder="Ej: Valentina y Andrés">
                 </div>
 
+                <!-- Campos de Región y Ciudad -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex flex-col relative">
+                        <label class="font-label-caps text-primary/70 text-xs tracking-widest mb-1 uppercase">Región</label>
+                        <select id="contact-region" required class="border-b border-outline-variant/50 py-3 focus:border-primary focus:ring-0 outline-none w-full bg-transparent text-primary transition-colors font-body-lg appearance-none cursor-pointer">
+                            <option value="" disabled selected>Selecciona una región...</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col relative">
+                        <label class="font-label-caps text-primary/70 text-xs tracking-widest mb-1 uppercase">Ciudad</label>
+                        <select id="contact-city" required disabled class="border-b border-outline-variant/50 py-3 focus:border-primary focus:ring-0 outline-none w-full bg-transparent text-primary transition-colors font-body-lg appearance-none cursor-pointer disabled:opacity-50">
+                            <option value="" disabled selected>Selecciona una ciudad...</option>
+                        </select>
+                    </div>
+                </div>
+
                 <!-- Campo de Descripción -->
                 <div class="flex flex-col relative">
                     <label class="font-label-caps text-primary/70 text-xs tracking-widest mb-1 uppercase">¿Qué tienes en mente?</label>
@@ -202,6 +218,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const inputName = document.getElementById('contact-name');
     const inputDate = document.getElementById('contact-date');
     const inputDesc = document.getElementById('contact-desc');
+    const inputRegion = document.getElementById('contact-region');
+    const inputCity = document.getElementById('contact-city');
     const btnWhatsapp = document.getElementById('btn-whatsapp');
 
     let currentType = "Matrimonio";
@@ -239,14 +257,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const name = inputName.value.trim();
         const date = inputDate.value;
         const desc = inputDesc.value.trim();
+        const region = inputRegion.value;
+        const city = inputCity.value;
 
-        if (!name || !desc) {
-            alert("Por favor, completa tu nombre y la descripción de tu idea para poder acompañarte mejor.");
+        if (!name || !desc || !region || !city) {
+            alert("Por favor, completa todos los campos (incluyendo región y ciudad) para poder acompañarte mejor.");
             return;
         }
 
         let message = `Hola Torrealba Joyas, me comunico por: *${currentType}*\n\n`;
         message += `*Nombre:* ${name}\n`;
+        message += `*Ubicación:* ${city}, ${region}\n`;
         
         if (currentType === "Matrimonio" && date) {
             message += `*Fecha estimada:* ${date}\n`;
@@ -297,6 +318,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     </footer>
 
+<script src="js/regions.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

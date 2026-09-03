@@ -270,6 +270,22 @@ tailwind.config = {
                     </div>
                 </div>
 
+                <!-- Campos de Región y Ciudad -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                    <div class="flex flex-col relative">
+                        <label class="font-label-caps text-primary/70 text-xs tracking-widest mb-1 uppercase">Región</label>
+                        <select id="ws-region" required class="border-b border-outline-variant/50 py-2 focus:border-primary focus:ring-0 outline-none w-full bg-transparent text-primary transition-colors font-body-lg appearance-none cursor-pointer">
+                            <option value="" disabled selected>Selecciona una región...</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col relative">
+                        <label class="font-label-caps text-primary/70 text-xs tracking-widest mb-1 uppercase">Ciudad</label>
+                        <select id="ws-city" required disabled class="border-b border-outline-variant/50 py-2 focus:border-primary focus:ring-0 outline-none w-full bg-transparent text-primary transition-colors font-body-lg appearance-none cursor-pointer disabled:opacity-50">
+                            <option value="" disabled selected>Selecciona una ciudad...</option>
+                        </select>
+                    </div>
+                </div>
+
                 <div class="flex flex-col relative mt-2">
                     <label class="font-label-caps text-primary/70 text-xs tracking-widest mb-1 uppercase">¿Qué te gustaría aprender?</label>
                     <textarea id="ws-comments" rows="3" required class="border-b border-outline-variant/50 py-2 focus:border-primary focus:ring-0 outline-none w-full bg-transparent placeholder-on-surface/30 text-primary transition-colors font-body-lg resize-none" placeholder="Cuéntanos si tienes experiencia previa o qué técnicas te interesan..."></textarea>
@@ -324,6 +340,7 @@ tailwind.config = {
         </div>
     </footer>
 
+<script src="js/regions.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

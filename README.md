@@ -26,6 +26,11 @@ Los siguientes archivos conforman el núcleo de la aplicación web que debe ser 
 
 ## Historial de Cambios y Mejoras (Changelog)
 
+### v1.0.4 - Mejoras en Formularios de Contacto (03 de Septiembre de 2026)
+- **Segmentación Geográfica**: Integración dinámica de campos de selección para Región y Ciudad (346 comunas de Chile) en todos los formularios (`contacto.html`, `catalogo.html`, `orfebreria.html`).
+- **Base de Datos Local**: Creación de `js/regions.js` para administrar los datos estructurados geográficos de Chile.
+- **WhatsApp Dinámico**: Inyección de los datos de ubicación seleccionados (Ciudad y Región) directamente en el cuerpo del mensaje de WhatsApp generado, optimizando el filtro de cotizaciones.
+
 ### v1.0.3 - Optimización de Rendimiento, Interfaz y SEO (27 de Agosto de 2026)
 - **División de Galería**: Se implementó un sistema de pestañas en `galeria.html` para separar Fotos y Videos. Esto reduce significativamente la carga inicial del DOM y mejora la experiencia de navegación del usuario.
 - **Refinamiento de Schema Local**: Se actualizó el JSON-LD en `index.html` de `JewelryStore` a `LocalBusiness`, integrando palabras clave de SEO local (Talca, Curicó, Región del Maule) y enfatizando el concepto de "Joyería de autor".
