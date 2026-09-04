@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="assets/hero_bg.png" fetchpriority="high">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
@@ -192,7 +195,7 @@
         <section
             class="relative w-full h-[751px] md:h-[85vh] flex items-center justify-center bg-surface-container-low overflow-hidden">
             <img src="assets/hero_bg.png" alt="Argollas de Matrimonio"
-                class="absolute inset-0 w-full h-full object-cover animate-zoom">
+                class="absolute inset-0 w-full h-full object-cover animate-zoom" fetchpriority="high" decoding="async">
             <div class="absolute inset-0 bg-primary/20"></div>
             <div class="relative z-10 text-center px-margin-mobile animate-fade-in-up">
                 <span
@@ -223,10 +226,10 @@
                 <a href="catalogo.html"
                     class="md:col-span-8 relative group overflow-hidden bg-surface-dim flex items-end p-8 shadow-md hover:shadow-2xl rounded-2xl transition-all duration-500 reveal-on-scroll">
 
-                    <!-- Video Background -->
-                    <video src="assets/catalogo_bg.mp4"
-                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 z-0 pointer-events-none"
-                        autoplay loop muted playsinline preload="auto"></video>
+                    <!-- Video Background (Lazy Loaded) -->
+                    <video data-src="assets/catalogo_bg.mp4" poster="assets/catalogo_rings.png"
+                        class="lazy-video absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 z-0 pointer-events-none"
+                        loop muted playsinline preload="none"></video>
 
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/40 to-transparent transition-opacity duration-500 group-hover:opacity-80 z-0">
@@ -245,9 +248,10 @@
                 <a href="orfebreria.html"
                     class="md:col-span-4 relative group overflow-hidden bg-surface-dim flex items-end p-8 shadow-md hover:shadow-2xl rounded-2xl transition-all duration-500 reveal-on-scroll"
                     style="transition-delay: 100ms;">
-                    <video src="assets/talleres_bg.mp4"
-                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 z-0 pointer-events-none"
-                        autoplay loop muted playsinline preload="auto"></video>
+                    <!-- Video Background (Lazy Loaded) -->
+                    <video data-src="assets/talleres_bg.mp4" poster="assets/taller_1.jpg"
+                        class="lazy-video absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 z-0 pointer-events-none"
+                        loop muted playsinline preload="none"></video>
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-primary/10 transition-opacity duration-500 group-hover:opacity-90 z-0">
                     </div>
@@ -264,9 +268,10 @@
                 <!-- Bento Item: Quién Soy -->
                 <a href="quien-soy.html"
                     class="md:col-span-5 relative group overflow-hidden bg-surface-dim flex items-end p-8 shadow-md hover:shadow-2xl rounded-2xl transition-all duration-500 reveal-on-scroll">
-                    <video src="assets/quiensoy_video.mp4"
-                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 z-0 pointer-events-none"
-                        autoplay loop muted playsinline preload="auto"></video>
+                    <!-- Video Background (Lazy Loaded) -->
+                    <video data-src="assets/quiensoy_video.mp4" poster="assets/quiensoy_portrait.png"
+                        class="lazy-video absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 z-0 pointer-events-none"
+                        loop muted playsinline preload="none"></video>
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-primary/10 transition-opacity duration-500 group-hover:opacity-90 z-0">
                     </div>

@@ -393,4 +393,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // --- Universal Lazy Loading para Videos de Alto Rendimiento ---
+    const lazyVideos = document.querySelectorAll('video.lazy-video, video[data-src]');
+    if (lazyVideos.length > 0) {
+        const lazyVideoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const video = entry.target;
+                if (entry.isIntersecting) {
+                    if (video.dataset.src && (!video.currentSrc || video.currentSrc === '')) {
+                        video.src = video.dataset.src;
+                        video.load();
+                    }
+                    video.play().catch(() => {});
+                } else {
+                    if (!video.paused) {
+                        video.pause();
+                    }
+                }
+            });
+        }, { rootMargin: "300px 0px", threshold: 0.05 });
+
+        lazyVideos.forEach(vid => {
+            lazyVideoObserver.observe(vid);
+        });
+    }
 });

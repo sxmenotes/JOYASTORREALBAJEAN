@@ -4,6 +4,8 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
@@ -152,7 +154,7 @@ tailwind.config = {
             <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-1/4 h-[1px] bg-secondary/40"></div>
             <div class="h-[400px] md:h-[650px] w-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10">
-                <video src="assets/taller_intro_video.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"></video>
+                <video src="assets/taller_intro_video.mp4" autoplay loop muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"></video>
             </div>
         </div>
         <!-- Video 2 Wrapper -->
@@ -161,7 +163,7 @@ tailwind.config = {
             <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-1/4 h-[1px] bg-secondary/40"></div>
             <div class="h-[400px] md:h-[650px] w-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10">
-                <video src="assets/taller_intro_video_2.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"></video>
+                <video src="assets/taller_intro_video_2.mp4" autoplay loop muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"></video>
             </div>
         </div>
     </div>
@@ -183,7 +185,7 @@ tailwind.config = {
             <button id="open-workshop-btn" class="inline-flex items-center justify-center border border-primary text-primary font-cta-label text-cta-label px-8 py-4 uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-300">Solicitar Información</button>
         </div>
         <div class="h-[400px] md:h-[600px] border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl">
-             <video src="assets/taller_intro_video_3.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"></video>
+             <video src="assets/taller_intro_video_3.mp4" autoplay loop muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"></video>
         </div>
     </div>
 </div>
@@ -196,8 +198,8 @@ tailwind.config = {
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="w-full h-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10 video-slider bg-surface">
-                <video src="assets/gal_vid_1.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
-                <video src="assets/gal_vid_2.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
+                <video src="assets/gal_vid_1.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
+                <video src="assets/gal_vid_2.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
             </div>
         </div>
         <!-- Video 2 -->
@@ -205,8 +207,8 @@ tailwind.config = {
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="w-full h-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10 video-slider bg-surface">
-                <video src="assets/gal_vid_3.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
-                <video src="assets/gal_vid_4.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
+                <video src="assets/gal_vid_3.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
+                <video src="assets/gal_vid_4.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
             </div>
         </div>
         <!-- Video 3 -->
@@ -214,8 +216,8 @@ tailwind.config = {
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="w-full h-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10 video-slider bg-surface">
-                <video src="assets/gal_vid_5.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
-                <video src="assets/gal_vid_6.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
+                <video src="assets/gal_vid_5.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
+                <video src="assets/gal_vid_6.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
             </div>
         </div>
         <!-- Video 4 -->
@@ -223,8 +225,8 @@ tailwind.config = {
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="w-full h-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10 video-slider bg-surface">
-                <video src="assets/gal_vid_7.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
-                <video src="assets/gal_vid_8.mp4" muted playsinline class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
+                <video src="assets/gal_vid_7.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
+                <video src="assets/gal_vid_8.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
             </div>
         </div>
     </div>

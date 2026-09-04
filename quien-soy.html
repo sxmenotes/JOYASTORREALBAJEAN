@@ -4,6 +4,8 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
@@ -160,7 +162,7 @@ tailwind.config = {
                 <p class="font-body-lg text-on-surface leading-relaxed font-semibold italic text-primary/80">Todas mis joyas son auténticas piezas de autor, diseñadas y elaboradas a mano con una identidad propia. Cuido cada mínimo detalle para que el resultado final refleje a la perfección la esencia y la historia de quienes las eligen.</p>
             </div>
             <div class="md:col-span-6 md:col-start-7 mt-12 md:mt-0 relative h-[400px] md:h-[600px] rounded-3xl border border-secondary/50 shadow-lg group transition-shadow duration-500 overflow-hidden reveal-on-scroll">
-                <video id="quiensoy-video" src="assets/quiensoy_video.mp4" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" autoplay loop muted playsinline></video>
+                <video id="quiensoy-video" data-src="assets/quiensoy_video.mp4" poster="assets/quiensoy_portrait.png" class="lazy-video w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" loop muted playsinline preload="none"></video>
                 
                 <!-- Mute/Unmute Toggle Button -->
                 <button id="mute-toggle-btn" class="absolute bottom-4 right-4 bg-surface/80 backdrop-blur-md p-3 rounded-full shadow-md text-primary hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center border border-outline-variant/30 z-10" aria-label="Toggle sound">
