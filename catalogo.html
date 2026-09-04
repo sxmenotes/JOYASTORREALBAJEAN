@@ -7,16 +7,16 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Asynchronous Non-Blocking Google Fonts -->
-    <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
-    </noscript>
-
-    <script defer src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Great+Vibes&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"
+        rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
     <script id="tailwind-config">
         tailwind.config = {
@@ -126,10 +126,7 @@
             <!-- Logo -->
             <a class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center h-full py-1"
                 href="index.html">
-                <picture>
-                    <source srcset="assets/logo.webp" type="image/webp">
-                    <img loading="lazy" src="assets/logo.png" alt="Torrealba Joyas" class="h-full w-auto object-contain">
-                </picture>
+                <img loading="lazy" src="assets/logo.png" alt="Torrealba Joyas" class="h-full w-auto object-contain">
             </a>
 
             <!-- Desktop Navigation Right -->
@@ -2188,10 +2185,7 @@
                     <p class="font-body-lg text-on-surface/80 leading-relaxed mb-8">Una elección maravillosa. Completa
                         estos datos y te enviaremos los detalles para comenzar a dar vida a tus anillos.</p>
                     <div class="mt-auto hidden md:block">
-                        <picture>
-                            <source srcset="assets/logo.webp" type="image/webp">
-                            <img loading="lazy" src="assets/logo.png" alt="Torrealba Joyas" class="h-12 opacity-50 grayscale">
-                        </picture>
+                        <img loading="lazy" src="assets/logo.png" alt="Torrealba Joyas" class="h-12 opacity-50 grayscale">
                     </div>
                 </div>
 
@@ -2350,12 +2344,7 @@
         <div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop gap-gutter w-full max-w-container-max mx-auto flex-wrap">
             <div class="mb-8 md:mb-0 w-full md:w-auto">
                 <div class="mb-4">
-                    <a href="index.html">
-                        <picture>
-                            <source srcset="assets/logo_white.webp" type="image/webp">
-                            <img loading="lazy" src="assets/logo_white.png" alt="Torrealba Joyas" class="h-24 md:h-32 w-auto object-contain">
-                        </picture>
-                    </a>
+                    <a href="index.html"><img loading="lazy" src="assets/logo_white.png" alt="Torrealba Joyas" class="h-24 md:h-32 w-auto object-contain"></a>
                 </div>
                 <div class="font-body-md text-on-primary/60">Especialistas en joyas para novios.</div>
                 <div class="font-body-md text-on-primary/40 mt-8 text-sm">© 2024 TORREALBA JOYAS. TODOS LOS DERECHOS RESERVADOS.</div>
