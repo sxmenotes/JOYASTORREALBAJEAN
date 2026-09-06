@@ -1,12 +1,12 @@
 {
   "outputDirectory": ".",
   "redirects": [
-    { "source": "/product/:path*", "destination": "/catalogo.html", "permanent": true },
-    { "source": "/product-category/:path*", "destination": "/catalogo.html", "permanent": true },
-    { "source": "/shop/:path*", "destination": "/catalogo.html", "permanent": true },
-    { "source": "/argollas-de-matrimonio(?:/)?", "destination": "/catalogo.html", "permanent": true },
-    { "source": "/talleres(?:/)?", "destination": "/orfebreria.html", "permanent": true },
-    { "source": "/academia(?:/)?", "destination": "/orfebreria.html", "permanent": true },
-    { "source": "/wp(?:-.*)?", "destination": "/", "permanent": true }
+    { "source": "/product/(.*)", "destination": "/catalogo.html", "permanent": true },
+    { "source": "/product-category/(.*)", "destination": "/catalogo.html", "permanent": true },
+    { "source": "/shop/(.*)", "destination": "/catalogo.html", "permanent": true },
+    { "source": "/argollas-de-matrimonio(.*)", "destination": "/catalogo.html", "permanent": true },
+    { "source": "/talleres(.*)", "destination": "/orfebreria.html", "permanent": true },
+    { "source": "/academia(.*)", "destination": "/orfebreria.html", "permanent": true },
+    { "source": "/wp(.*)", "destination": "/", "permanent": true }
   ]
 }
