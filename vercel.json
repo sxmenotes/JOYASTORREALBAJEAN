@@ -1,5 +1,6 @@
 {
-  "outputDirectory": ".",
+  "outputDirectory": "dist",
+  "buildCommand": "npm run build",
   "redirects": [
     { "source": "/product/(.*)", "destination": "/catalogo.html", "permanent": true },
     { "source": "/product-category/(.*)", "destination": "/catalogo.html", "permanent": true },

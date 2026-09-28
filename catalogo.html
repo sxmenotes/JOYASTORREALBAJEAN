@@ -5,75 +5,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Great+Vibes&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css">
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-dim": "#dadada",
-                        "on-background": "#1a1c1c",
-                        "outline-variant": "#c0c0c0", /* Plateado */
-                        "surface-container-low": "#f3f3f4",
-                        "surface-container-high": "#e8e8e8",
-                        "surface": "#ffffff", /* Blanco */
-                        "on-surface": "#111111", /* Negro */
-                        "primary": "#111111",
-                        "on-primary": "#ffffff",
-                        "secondary": "#d4af37", /* Dorado */
-                        "on-secondary": "#ffffff",
-                        "secondary-container": "#d4af37", /* Dorado CTA */
-                        "on-secondary-container": "#ffffff",
-                        "outline": "#c0c0c0", /* Plateado */
-                        "background": "#ffffff",
-                        "surface-container-lowest": "#ffffff",
-                    },
-                    "spacing": {
-                        "section-gap": "120px",
-                        "margin-desktop": "80px",
-                        "unit": "8px",
-                        "margin-mobile": "20px",
-                        "gutter": "24px",
-                        "container-max": "1440px"
-                    },
-                    "fontFamily": {
-                        "label-caps": ["Inter"],
-                        "cta-label": ["Inter"],
-                        "display-lg": ["Bodoni Moda"],
-                        "body-lg": ["Inter"],
-                        "headline-lg": ["Bodoni Moda"],
-                        "display-lg-mobile": ["Bodoni Moda"],
-                        "body-md": ["Inter"],
-                        "headline-md": ["Bodoni Moda"]
-                    },
-                    "fontSize": {
-                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600" }],
-                        "cta-label": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
-                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
-                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "400" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }]
-                    }
-                }
-            }
-        }
-    </script>
-
+        <link rel="stylesheet" href="/src/main.css">
     <title>Catálogo de Anillos y Argollas en Talca | Torrealba Joyas</title>
     <meta name="description" content="Revisa nuestro catálogo de anillos de compromiso, argollas de matrimonio y alta joyería en Talca y Curicó. Diseños únicos para bodas en el Maule.">
     <meta name="keywords" content="anillos talca, matrimonios, bodas talca, proveedores maule, torrealba joyas talca, bodas maule, anillos en talca, anillos en curicó, compromiso, matrimonio talca, matrimonio curicó, argollas de casamiento maule, anillos de matrimonio en el maule, joyería maule, alta joyería talca, orfebrería curicó">
@@ -126,7 +58,7 @@
             <!-- Logo -->
             <a class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center h-full py-1"
                 href="index.html">
-                <img loading="lazy" src="assets/logo.png" alt="Torrealba Joyas" class="h-full w-auto object-contain">
+                <img src="assets/logo.png" alt="Torrealba Joyas" class="h-full w-auto object-contain">
             </a>
 
             <!-- Desktop Navigation Right -->
@@ -2180,12 +2112,12 @@
                         class="font-headline-lg text-3xl md:text-4xl text-primary mb-4 italic font-serif leading-tight">
                         Modelo</h3>
                     <div class="mb-6 rounded-2xl overflow-hidden border border-secondary/30 shadow-md">
-                        <img id="modal-model-image" src="" alt="Modelo" class="w-full h-36 object-cover hidden">
+                        <img id="modal-model-image" src="" alt="Modelo" class="w-full h-36 object-cover hidden" loading="lazy" decoding="async">
                     </div>
                     <p class="font-body-lg text-on-surface/80 leading-relaxed mb-8">Una elección maravillosa. Completa
                         estos datos y te enviaremos los detalles para comenzar a dar vida a tus anillos.</p>
                     <div class="mt-auto hidden md:block">
-                        <img loading="lazy" src="assets/logo.png" alt="Torrealba Joyas" class="h-12 opacity-50 grayscale">
+                        <img src="assets/logo.png" alt="Torrealba Joyas" class="h-12 opacity-50 grayscale">
                     </div>
                 </div>
 
@@ -2783,8 +2715,8 @@
             });
         });
     </script>
-    <script src="js/regions.js"></script>
-    <script src="js/main.js"></script>
+    <script defer src="js/regions.js"></script>
+    <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>

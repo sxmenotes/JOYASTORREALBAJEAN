@@ -1,0 +1,66 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // Purge unused classes from all HTML and JS files
+  content: [
+    './*.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    './js/**/*.js',
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'surface-dim':               '#dadada',
+        'on-background':             '#1a1c1c',
+        'outline-variant':           '#c0c0c0',
+        'surface-container-low':     '#f3f3f4',
+        'surface-container-high':    '#e8e8e8',
+        'surface':                   '#ffffff',
+        'on-surface':                '#111111',
+        'primary':                   '#111111',
+        'on-primary':                '#ffffff',
+        'secondary':                 '#d4af37',
+        'on-secondary':              '#ffffff',
+        'secondary-container':       '#d4af37',
+        'on-secondary-container':    '#ffffff',
+        'outline':                   '#c0c0c0',
+        'background':                '#ffffff',
+        'surface-container-lowest':  '#ffffff',
+      },
+      spacing: {
+        'section-gap':      '120px',
+        'margin-desktop':   '80px',
+        'unit':             '8px',
+        'margin-mobile':    '20px',
+        'gutter':           '24px',
+        'container-max':    '1440px',
+      },
+      fontFamily: {
+        'label-caps':         ['Inter', 'sans-serif'],
+        'cta-label':          ['Inter', 'sans-serif'],
+        'display-lg':         ['Bodoni Moda', 'serif'],
+        'body-lg':            ['Inter', 'sans-serif'],
+        'headline-lg':        ['Bodoni Moda', 'serif'],
+        'display-lg-mobile':  ['Bodoni Moda', 'serif'],
+        'body-md':            ['Inter', 'sans-serif'],
+        'headline-md':        ['Bodoni Moda', 'serif'],
+        'playfair':           ['Playfair Display', 'serif'],
+        'great-vibes':        ['Great Vibes', 'cursive'],
+      },
+      fontSize: {
+        'label-caps':        ['12px', { lineHeight: '1.0', letterSpacing: '0.15em', fontWeight: '600' }],
+        'cta-label':         ['14px', { lineHeight: '1.0', letterSpacing: '0.05em', fontWeight: '500' }],
+        'display-lg':        ['64px', { lineHeight: '1.1', letterSpacing: '-0.02em', fontWeight: '400' }],
+        'body-lg':           ['18px', { lineHeight: '1.6', fontWeight: '400' }],
+        'headline-lg':       ['48px', { lineHeight: '1.2', fontWeight: '400' }],
+        'display-lg-mobile': ['40px', { lineHeight: '1.2', fontWeight: '400' }],
+        'body-md':           ['16px', { lineHeight: '1.6', fontWeight: '400' }],
+        'headline-md':       ['32px', { lineHeight: '1.3', fontWeight: '400' }],
+      },
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/container-queries'),
+  ],
+};

@@ -1,0 +1,22 @@
+[
+  { "src": "assets/gallery/item_1.jpg", "type": "image" },
+  { "src": "assets/gallery/item_4.jpg", "type": "image" },
+  { "src": "assets/gallery/item_6.jpg", "type": "image" },
+  { "src": "assets/gallery/item_7.jpg", "type": "image" },
+  { "src": "assets/gallery/item_10.jpg", "type": "image" },
+  { "src": "assets/gallery/item_11.jpg", "type": "image" },
+  { "src": "assets/gallery/item_13.jpg", "type": "image" },
+  { "src": "assets/gallery/item_15.jpg", "type": "image" },
+  { "src": "assets/gallery/item_16.jpg", "type": "image" },
+  { "src": "assets/gallery/item_22.jpg", "type": "image" },
+  { "src": "assets/gallery/item_23.jpg", "type": "image" },
+  { "src": "assets/gallery/item_25.jpg", "type": "image" },
+  { "src": "assets/gallery/item_26.jpg", "type": "image" },
+  { "src": "assets/gallery/item_37.jpg", "type": "image" },
+  { "src": "assets/gallery/item_39.jpg", "type": "image" },
+  { "src": "assets/gallery/item_41.jpg", "type": "image" },
+  { "src": "assets/gallery/item_43.jpg", "type": "image" },
+  { "src": "assets/gallery/item_47.jpg", "type": "image" },
+  { "src": "assets/gallery/item_49.jpg", "type": "image" },
+  { "src": "assets/gallery/item_51.jpg", "type": "image" }
+]

@@ -17,6 +17,13 @@ scratch/
 node_modules/
 package-lock.json
 
+# Respaldo de la versión antigua
+respaldo-sitio-antiguo/
+
+# Build de producción y herramientas de auditoría
+dist/
+.playwright-mcp/
+
 # Ignorar páginas obsoletas si no se usan
 simulador.html
 torrealbajoyas/

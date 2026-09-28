@@ -1,0 +1,212 @@
+{
+  "assets/c1.png": {
+    "nameWithoutExt": "c1",
+    "originalSrc": "assets/c1.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/c1/480w.avif 480w, assets/optimized/c1/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/c1/480w.webp 480w, assets/optimized/c1/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/c1/800w.png\" srcset=\"assets/optimized/c1/480w.png 480w, assets/optimized/c1/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/c2.png": {
+    "nameWithoutExt": "c2",
+    "originalSrc": "assets/c2.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/c2/480w.avif 480w, assets/optimized/c2/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/c2/480w.webp 480w, assets/optimized/c2/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/c2/800w.png\" srcset=\"assets/optimized/c2/480w.png 480w, assets/optimized/c2/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/c3.png": {
+    "nameWithoutExt": "c3",
+    "originalSrc": "assets/c3.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/c3/480w.avif 480w, assets/optimized/c3/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/c3/480w.webp 480w, assets/optimized/c3/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/c3/800w.png\" srcset=\"assets/optimized/c3/480w.png 480w, assets/optimized/c3/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/c4.png": {
+    "nameWithoutExt": "c4",
+    "originalSrc": "assets/c4.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/c4/480w.avif 480w, assets/optimized/c4/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/c4/480w.webp 480w, assets/optimized/c4/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/c4/800w.png\" srcset=\"assets/optimized/c4/480w.png 480w, assets/optimized/c4/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/catalogo_rings.png": {
+    "nameWithoutExt": "catalogo_rings",
+    "originalSrc": "assets/catalogo_rings.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/catalogo_rings/480w.avif 480w, assets/optimized/catalogo_rings/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/catalogo_rings/480w.webp 480w, assets/optimized/catalogo_rings/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/catalogo_rings/800w.png\" srcset=\"assets/optimized/catalogo_rings/480w.png 480w, assets/optimized/catalogo_rings/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/clase_taller.jpg": {
+    "nameWithoutExt": "clase_taller",
+    "originalSrc": "assets/clase_taller.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/clase_taller/480w.avif 480w, assets/optimized/clase_taller/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/clase_taller/480w.webp 480w, assets/optimized/clase_taller/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/clase_taller/800w.jpg\" srcset=\"assets/optimized/clase_taller/480w.jpg 480w, assets/optimized/clase_taller/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/contacto_showroom.png": {
+    "nameWithoutExt": "contacto_showroom",
+    "originalSrc": "assets/contacto_showroom.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/contacto_showroom/480w.avif 480w, assets/optimized/contacto_showroom/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/contacto_showroom/480w.webp 480w, assets/optimized/contacto_showroom/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/contacto_showroom/800w.png\" srcset=\"assets/optimized/contacto_showroom/480w.png 480w, assets/optimized/contacto_showroom/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/favicon.png": {
+    "nameWithoutExt": "favicon",
+    "originalSrc": "assets/favicon.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/favicon/undefinedw.png\" srcset=\"\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/galeria_9.jpg": {
+    "nameWithoutExt": "galeria_9",
+    "originalSrc": "assets/galeria_9.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/galeria_9/480w.avif 480w, assets/optimized/galeria_9/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/galeria_9/480w.webp 480w, assets/optimized/galeria_9/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/galeria_9/800w.jpg\" srcset=\"assets/optimized/galeria_9/480w.jpg 480w, assets/optimized/galeria_9/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/hero_bg.png": {
+    "nameWithoutExt": "hero_bg",
+    "originalSrc": "assets/hero_bg.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/hero_bg/480w.avif 480w, assets/optimized/hero_bg/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/hero_bg/480w.webp 480w, assets/optimized/hero_bg/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/hero_bg/800w.png\" srcset=\"assets/optimized/hero_bg/480w.png 480w, assets/optimized/hero_bg/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/logo.png": {
+    "nameWithoutExt": "logo",
+    "originalSrc": "assets/logo.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/logo/480w.avif 480w, assets/optimized/logo/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/logo/480w.webp 480w, assets/optimized/logo/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/logo/800w.png\" srcset=\"assets/optimized/logo/480w.png 480w, assets/optimized/logo/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/logo_white.png": {
+    "nameWithoutExt": "logo_white",
+    "originalSrc": "assets/logo_white.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/logo_white/480w.avif 480w, assets/optimized/logo_white/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/logo_white/480w.webp 480w, assets/optimized/logo_white/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/logo_white/800w.png\" srcset=\"assets/optimized/logo_white/480w.png 480w, assets/optimized/logo_white/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/m1.png": {
+    "nameWithoutExt": "m1",
+    "originalSrc": "assets/m1.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/m1/480w.avif 480w, assets/optimized/m1/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/m1/480w.webp 480w, assets/optimized/m1/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/m1/800w.png\" srcset=\"assets/optimized/m1/480w.png 480w, assets/optimized/m1/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/m2.png": {
+    "nameWithoutExt": "m2",
+    "originalSrc": "assets/m2.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/m2/480w.avif 480w, assets/optimized/m2/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/m2/480w.webp 480w, assets/optimized/m2/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/m2/800w.png\" srcset=\"assets/optimized/m2/480w.png 480w, assets/optimized/m2/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/m3.png": {
+    "nameWithoutExt": "m3",
+    "originalSrc": "assets/m3.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/m3/480w.avif 480w, assets/optimized/m3/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/m3/480w.webp 480w, assets/optimized/m3/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/m3/800w.png\" srcset=\"assets/optimized/m3/480w.png 480w, assets/optimized/m3/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/m4.png": {
+    "nameWithoutExt": "m4",
+    "originalSrc": "assets/m4.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/m4/480w.avif 480w, assets/optimized/m4/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/m4/480w.webp 480w, assets/optimized/m4/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/m4/800w.png\" srcset=\"assets/optimized/m4/480w.png 480w, assets/optimized/m4/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/orfebreria_workshop.png": {
+    "nameWithoutExt": "orfebreria_workshop",
+    "originalSrc": "assets/orfebreria_workshop.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/orfebreria_workshop/480w.avif 480w, assets/optimized/orfebreria_workshop/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/orfebreria_workshop/480w.webp 480w, assets/optimized/orfebreria_workshop/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/orfebreria_workshop/800w.png\" srcset=\"assets/optimized/orfebreria_workshop/480w.png 480w, assets/optimized/orfebreria_workshop/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/quiensoy_portrait.png": {
+    "nameWithoutExt": "quiensoy_portrait",
+    "originalSrc": "assets/quiensoy_portrait.png",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/quiensoy_portrait/480w.avif 480w, assets/optimized/quiensoy_portrait/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/quiensoy_portrait/480w.webp 480w, assets/optimized/quiensoy_portrait/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/quiensoy_portrait/800w.png\" srcset=\"assets/optimized/quiensoy_portrait/480w.png 480w, assets/optimized/quiensoy_portrait/800w.png 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/taller_1.jpg": {
+    "nameWithoutExt": "taller_1",
+    "originalSrc": "assets/taller_1.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/taller_1/480w.avif 480w, assets/optimized/taller_1/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/taller_1/480w.webp 480w, assets/optimized/taller_1/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/taller_1/800w.jpg\" srcset=\"assets/optimized/taller_1/480w.jpg 480w, assets/optimized/taller_1/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/taller_2.jpg": {
+    "nameWithoutExt": "taller_2",
+    "originalSrc": "assets/taller_2.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/taller_2/480w.avif 480w, assets/optimized/taller_2/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/taller_2/480w.webp 480w, assets/optimized/taller_2/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/taller_2/800w.jpg\" srcset=\"assets/optimized/taller_2/480w.jpg 480w, assets/optimized/taller_2/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/taller_3.jpg": {
+    "nameWithoutExt": "taller_3",
+    "originalSrc": "assets/taller_3.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/taller_3/480w.avif 480w, assets/optimized/taller_3/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/taller_3/480w.webp 480w, assets/optimized/taller_3/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/taller_3/800w.jpg\" srcset=\"assets/optimized/taller_3/480w.jpg 480w, assets/optimized/taller_3/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/taller_4.jpg": {
+    "nameWithoutExt": "taller_4",
+    "originalSrc": "assets/taller_4.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/taller_4/480w.avif 480w, assets/optimized/taller_4/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/taller_4/480w.webp 480w, assets/optimized/taller_4/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/taller_4/800w.jpg\" srcset=\"assets/optimized/taller_4/480w.jpg 480w, assets/optimized/taller_4/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_1.jpg": {
+    "nameWithoutExt": "item_1",
+    "originalSrc": "assets/gallery/item_1.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_1/480w.avif 480w, assets/optimized/gallery/item_1/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_1/480w.webp 480w, assets/optimized/gallery/item_1/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_1/800w.jpg\" srcset=\"assets/optimized/gallery/item_1/480w.jpg 480w, assets/optimized/gallery/item_1/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_10.jpg": {
+    "nameWithoutExt": "item_10",
+    "originalSrc": "assets/gallery/item_10.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_10/480w.avif 480w, assets/optimized/gallery/item_10/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_10/480w.webp 480w, assets/optimized/gallery/item_10/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_10/800w.jpg\" srcset=\"assets/optimized/gallery/item_10/480w.jpg 480w, assets/optimized/gallery/item_10/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_11.jpg": {
+    "nameWithoutExt": "item_11",
+    "originalSrc": "assets/gallery/item_11.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_11/480w.avif 480w, assets/optimized/gallery/item_11/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_11/480w.webp 480w, assets/optimized/gallery/item_11/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_11/800w.jpg\" srcset=\"assets/optimized/gallery/item_11/480w.jpg 480w, assets/optimized/gallery/item_11/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_13.jpg": {
+    "nameWithoutExt": "item_13",
+    "originalSrc": "assets/gallery/item_13.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_13/480w.avif 480w, assets/optimized/gallery/item_13/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_13/480w.webp 480w, assets/optimized/gallery/item_13/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_13/800w.jpg\" srcset=\"assets/optimized/gallery/item_13/480w.jpg 480w, assets/optimized/gallery/item_13/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_15.jpg": {
+    "nameWithoutExt": "item_15",
+    "originalSrc": "assets/gallery/item_15.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_15/480w.avif 480w, assets/optimized/gallery/item_15/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_15/480w.webp 480w, assets/optimized/gallery/item_15/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_15/800w.jpg\" srcset=\"assets/optimized/gallery/item_15/480w.jpg 480w, assets/optimized/gallery/item_15/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_16.jpg": {
+    "nameWithoutExt": "item_16",
+    "originalSrc": "assets/gallery/item_16.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_16/480w.avif 480w, assets/optimized/gallery/item_16/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_16/480w.webp 480w, assets/optimized/gallery/item_16/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_16/800w.jpg\" srcset=\"assets/optimized/gallery/item_16/480w.jpg 480w, assets/optimized/gallery/item_16/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_22.jpg": {
+    "nameWithoutExt": "item_22",
+    "originalSrc": "assets/gallery/item_22.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_22/480w.avif 480w, assets/optimized/gallery/item_22/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_22/480w.webp 480w, assets/optimized/gallery/item_22/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_22/800w.jpg\" srcset=\"assets/optimized/gallery/item_22/480w.jpg 480w, assets/optimized/gallery/item_22/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_23.jpg": {
+    "nameWithoutExt": "item_23",
+    "originalSrc": "assets/gallery/item_23.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_23/480w.avif 480w, assets/optimized/gallery/item_23/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_23/480w.webp 480w, assets/optimized/gallery/item_23/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_23/800w.jpg\" srcset=\"assets/optimized/gallery/item_23/480w.jpg 480w, assets/optimized/gallery/item_23/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_25.jpg": {
+    "nameWithoutExt": "item_25",
+    "originalSrc": "assets/gallery/item_25.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_25/480w.avif 480w, assets/optimized/gallery/item_25/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_25/480w.webp 480w, assets/optimized/gallery/item_25/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_25/800w.jpg\" srcset=\"assets/optimized/gallery/item_25/480w.jpg 480w, assets/optimized/gallery/item_25/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_26.jpg": {
+    "nameWithoutExt": "item_26",
+    "originalSrc": "assets/gallery/item_26.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_26/480w.avif 480w, assets/optimized/gallery/item_26/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_26/480w.webp 480w, assets/optimized/gallery/item_26/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_26/800w.jpg\" srcset=\"assets/optimized/gallery/item_26/480w.jpg 480w, assets/optimized/gallery/item_26/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_37.jpg": {
+    "nameWithoutExt": "item_37",
+    "originalSrc": "assets/gallery/item_37.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_37/480w.avif 480w, assets/optimized/gallery/item_37/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_37/480w.webp 480w, assets/optimized/gallery/item_37/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_37/800w.jpg\" srcset=\"assets/optimized/gallery/item_37/480w.jpg 480w, assets/optimized/gallery/item_37/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_39.jpg": {
+    "nameWithoutExt": "item_39",
+    "originalSrc": "assets/gallery/item_39.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_39/480w.avif 480w, assets/optimized/gallery/item_39/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_39/480w.webp 480w, assets/optimized/gallery/item_39/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_39/800w.jpg\" srcset=\"assets/optimized/gallery/item_39/480w.jpg 480w, assets/optimized/gallery/item_39/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_4.jpg": {
+    "nameWithoutExt": "item_4",
+    "originalSrc": "assets/gallery/item_4.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_4/480w.avif 480w, assets/optimized/gallery/item_4/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_4/480w.webp 480w, assets/optimized/gallery/item_4/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_4/800w.jpg\" srcset=\"assets/optimized/gallery/item_4/480w.jpg 480w, assets/optimized/gallery/item_4/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_41.jpg": {
+    "nameWithoutExt": "item_41",
+    "originalSrc": "assets/gallery/item_41.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_41/480w.avif 480w, assets/optimized/gallery/item_41/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_41/480w.webp 480w, assets/optimized/gallery/item_41/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_41/800w.jpg\" srcset=\"assets/optimized/gallery/item_41/480w.jpg 480w, assets/optimized/gallery/item_41/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_43.jpg": {
+    "nameWithoutExt": "item_43",
+    "originalSrc": "assets/gallery/item_43.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_43/480w.avif 480w, assets/optimized/gallery/item_43/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_43/480w.webp 480w, assets/optimized/gallery/item_43/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_43/800w.jpg\" srcset=\"assets/optimized/gallery/item_43/480w.jpg 480w, assets/optimized/gallery/item_43/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_47.jpg": {
+    "nameWithoutExt": "item_47",
+    "originalSrc": "assets/gallery/item_47.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_47/480w.avif 480w, assets/optimized/gallery/item_47/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_47/480w.webp 480w, assets/optimized/gallery/item_47/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_47/800w.jpg\" srcset=\"assets/optimized/gallery/item_47/480w.jpg 480w, assets/optimized/gallery/item_47/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_49.jpg": {
+    "nameWithoutExt": "item_49",
+    "originalSrc": "assets/gallery/item_49.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_49/480w.avif 480w, assets/optimized/gallery/item_49/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_49/480w.webp 480w, assets/optimized/gallery/item_49/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_49/800w.jpg\" srcset=\"assets/optimized/gallery/item_49/480w.jpg 480w, assets/optimized/gallery/item_49/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_51.jpg": {
+    "nameWithoutExt": "item_51",
+    "originalSrc": "assets/gallery/item_51.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_51/480w.avif 480w, assets/optimized/gallery/item_51/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_51/480w.webp 480w, assets/optimized/gallery/item_51/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_51/800w.jpg\" srcset=\"assets/optimized/gallery/item_51/480w.jpg 480w, assets/optimized/gallery/item_51/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_6.jpg": {
+    "nameWithoutExt": "item_6",
+    "originalSrc": "assets/gallery/item_6.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_6/480w.avif 480w, assets/optimized/gallery/item_6/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_6/480w.webp 480w, assets/optimized/gallery/item_6/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_6/800w.jpg\" srcset=\"assets/optimized/gallery/item_6/480w.jpg 480w, assets/optimized/gallery/item_6/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  },
+  "assets/gallery/item_7.jpg": {
+    "nameWithoutExt": "item_7",
+    "originalSrc": "assets/gallery/item_7.jpg",
+    "picture": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/optimized/gallery/item_7/480w.avif 480w, assets/optimized/gallery/item_7/800w.avif 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <source type=\"image/webp\" srcset=\"assets/optimized/gallery/item_7/480w.webp 480w, assets/optimized/gallery/item_7/800w.webp 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\">\n  <img src=\"assets/optimized/gallery/item_7/800w.jpg\" srcset=\"assets/optimized/gallery/item_7/480w.jpg 480w, assets/optimized/gallery/item_7/800w.jpg 800w\" sizes=\"(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px\" loading=\"lazy\" decoding=\"async\" alt=\"\">\n</picture>"
+  }
+}

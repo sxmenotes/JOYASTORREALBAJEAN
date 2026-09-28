@@ -4,71 +4,8 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link rel="icon" type="image/png" href="assets/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet"/>
-<link rel="stylesheet" href="css/styles.css">
-<script id="tailwind-config">
-tailwind.config = {
-    darkMode: "class",
-    theme: {
-        extend: {
-            "colors": {
-                "surface-dim": "#dadada",
-                "on-background": "#1a1c1c",
-                "outline-variant": "#c0c0c0", /* Plateado */
-                "surface-container-low": "#f3f3f4",
-                "surface-container-high": "#e8e8e8",
-                "surface": "#ffffff", /* Blanco */
-                "on-surface": "#111111", /* Negro */
-                "primary": "#111111", 
-                "on-primary": "#ffffff",
-                "secondary": "#d4af37", /* Dorado */
-                "on-secondary": "#ffffff",
-                "secondary-container": "#d4af37", /* Dorado CTA */
-                "on-secondary-container": "#ffffff",
-                "outline": "#c0c0c0", /* Plateado */
-                "background": "#ffffff",
-                "surface-container-lowest": "#ffffff",
-            },
-            "spacing": {
-                "section-gap": "120px",
-                "margin-desktop": "80px",
-                "unit": "8px",
-                "margin-mobile": "20px",
-                "gutter": "24px",
-                "container-max": "1440px"
-            },
-            "fontFamily": {
-                "label-caps": ["Inter"],
-                "cta-label": ["Inter"],
-                "display-lg": ["Bodoni Moda"],
-                "body-lg": ["Inter"],
-                "headline-lg": ["Bodoni Moda"],
-                "display-lg-mobile": ["Bodoni Moda"],
-                "body-md": ["Inter"],
-                "headline-md": ["Bodoni Moda"]
-            },
-            "fontSize": {
-                "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600" }],
-                "cta-label": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
-                "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
-                "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
-                "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "400" }],
-                "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }]
-            }
-        }
-    }
-}
-</script>
-
-    <title>Taller de Orfebrería y Alta Joyería en Talca | Torrealba Joyas</title>
+    <link rel="stylesheet" href="/src/main.css">
+<title>Taller de Orfebrería y Alta Joyería en Talca | Torrealba Joyas</title>
     <meta name="description" content="Conoce nuestro taller de orfebrería en Talca. Creamos joyas personalizadas, anillos de matrimonio y compromiso con dedicación para parejas del Maule.">
     <meta name="keywords" content="anillos talca, matrimonios, bodas talca, proveedores maule, torrealba joyas talca, bodas maule, anillos en talca, anillos en curicó, compromiso, matrimonio talca, matrimonio curicó, argollas de casamiento maule, anillos de matrimonio en el maule, joyería maule, alta joyería talca, orfebrería curicó">
     
@@ -154,7 +91,10 @@ tailwind.config = {
             <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-1/4 h-[1px] bg-secondary/40"></div>
             <div class="h-[400px] md:h-[650px] w-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10">
-                <video src="assets/taller_intro_video.mp4" autoplay loop muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"></video>
+                <video autoplay loop muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" poster="assets/videos-optimized/taller_intro_video/taller_intro_video-poster.jpg">
+  <source src="assets/videos-optimized/taller_intro_video/taller_intro_video.webm" type="video/webm">
+  <source src="assets/videos-optimized/taller_intro_video/taller_intro_video.mp4" type="video/mp4">
+</video>
             </div>
         </div>
         <!-- Video 2 Wrapper -->
@@ -163,7 +103,10 @@ tailwind.config = {
             <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-1/4 h-[1px] bg-secondary/40"></div>
             <div class="h-[400px] md:h-[650px] w-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10">
-                <video src="assets/taller_intro_video_2.mp4" autoplay loop muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"></video>
+                <video autoplay loop muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" poster="assets/videos-optimized/taller_intro_video_2/taller_intro_video_2-poster.jpg">
+  <source src="assets/videos-optimized/taller_intro_video_2/taller_intro_video_2.webm" type="video/webm">
+  <source src="assets/videos-optimized/taller_intro_video_2/taller_intro_video_2.mp4" type="video/mp4">
+</video>
             </div>
         </div>
     </div>
@@ -185,7 +128,10 @@ tailwind.config = {
             <button id="open-workshop-btn" class="inline-flex items-center justify-center border border-primary text-primary font-cta-label text-cta-label px-8 py-4 uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-300">Solicitar Información</button>
         </div>
         <div class="h-[400px] md:h-[600px] border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl">
-             <video src="assets/taller_intro_video_3.mp4" autoplay loop muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"></video>
+             <video autoplay loop muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" poster="assets/videos-optimized/taller_intro_video_3/taller_intro_video_3-poster.jpg">
+  <source src="assets/videos-optimized/taller_intro_video_3/taller_intro_video_3.webm" type="video/webm">
+  <source src="assets/videos-optimized/taller_intro_video_3/taller_intro_video_3.mp4" type="video/mp4">
+</video>
         </div>
     </div>
 </div>
@@ -198,8 +144,14 @@ tailwind.config = {
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="w-full h-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10 video-slider bg-surface">
-                <video src="assets/gal_vid_1.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
-                <video src="assets/gal_vid_2.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
+                <video muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000" poster="assets/videos-optimized/gal_vid_1/gal_vid_1-poster.jpg">
+  <source src="assets/videos-optimized/gal_vid_1/gal_vid_1.webm" type="video/webm">
+  <source src="assets/videos-optimized/gal_vid_1/gal_vid_1.mp4" type="video/mp4">
+</video>
+                <video muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000" poster="assets/videos-optimized/gal_vid_2/gal_vid_2-poster.jpg">
+  <source src="assets/videos-optimized/gal_vid_2/gal_vid_2.webm" type="video/webm">
+  <source src="assets/videos-optimized/gal_vid_2/gal_vid_2.mp4" type="video/mp4">
+</video>
             </div>
         </div>
         <!-- Video 2 -->
@@ -207,8 +159,14 @@ tailwind.config = {
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="w-full h-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10 video-slider bg-surface">
-                <video src="assets/gal_vid_3.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
-                <video src="assets/gal_vid_4.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
+                <video muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000" poster="assets/videos-optimized/gal_vid_3/gal_vid_3-poster.jpg">
+  <source src="assets/videos-optimized/gal_vid_3/gal_vid_3.webm" type="video/webm">
+  <source src="assets/videos-optimized/gal_vid_3/gal_vid_3.mp4" type="video/mp4">
+</video>
+                <video muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000" poster="assets/videos-optimized/gal_vid_4/gal_vid_4-poster.jpg">
+  <source src="assets/videos-optimized/gal_vid_4/gal_vid_4.webm" type="video/webm">
+  <source src="assets/videos-optimized/gal_vid_4/gal_vid_4.mp4" type="video/mp4">
+</video>
             </div>
         </div>
         <!-- Video 3 -->
@@ -216,8 +174,14 @@ tailwind.config = {
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="w-full h-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10 video-slider bg-surface">
-                <video src="assets/gal_vid_5.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
-                <video src="assets/gal_vid_6.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
+                <video muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000" poster="assets/videos-optimized/gal_vid_5/gal_vid_5-poster.jpg">
+  <source src="assets/videos-optimized/gal_vid_5/gal_vid_5.webm" type="video/webm">
+  <source src="assets/videos-optimized/gal_vid_5/gal_vid_5.mp4" type="video/mp4">
+</video>
+                <video muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000" poster="assets/videos-optimized/gal_vid_6/gal_vid_6-poster.jpg">
+  <source src="assets/videos-optimized/gal_vid_6/gal_vid_6.webm" type="video/webm">
+  <source src="assets/videos-optimized/gal_vid_6/gal_vid_6.mp4" type="video/mp4">
+</video>
             </div>
         </div>
         <!-- Video 4 -->
@@ -225,8 +189,14 @@ tailwind.config = {
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-1/2 h-[1px] bg-secondary/80"></div>
             <div class="w-full h-full border border-secondary/50 shadow-lg group hover:shadow-xl transition-shadow duration-500 overflow-hidden relative rounded-2xl z-10 video-slider bg-surface">
-                <video src="assets/gal_vid_7.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000"></video>
-                <video src="assets/gal_vid_8.mp4" muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000"></video>
+                <video muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-100 transition-opacity duration-1000" poster="assets/videos-optimized/gal_vid_7/gal_vid_7-poster.jpg">
+  <source src="assets/videos-optimized/gal_vid_7/gal_vid_7.webm" type="video/webm">
+  <source src="assets/videos-optimized/gal_vid_7/gal_vid_7.mp4" type="video/mp4">
+</video>
+                <video muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-0 transition-opacity duration-1000" poster="assets/videos-optimized/gal_vid_8/gal_vid_8-poster.jpg">
+  <source src="assets/videos-optimized/gal_vid_8/gal_vid_8.webm" type="video/webm">
+  <source src="assets/videos-optimized/gal_vid_8/gal_vid_8.mp4" type="video/mp4">
+</video>
             </div>
         </div>
     </div>
@@ -342,7 +312,7 @@ tailwind.config = {
         </div>
     </footer>
 
-<script src="js/regions.js"></script>
-<script src="js/main.js"></script>
+<script defer src="js/regions.js"></script>
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>

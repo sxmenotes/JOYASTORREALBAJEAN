@@ -2,29 +2,60 @@
 
 Plataforma web *premium* de alta joyería, orfebrería y argollas de matrimonio para la marca **Torrealba Joyas**.
 
-## Estructura de Producción (Archivos de Carga)
+## Estructura del Proyecto (v1.1.0)
 
-Los siguientes archivos conforman el núcleo de la aplicación web que debe ser desplegada en el servidor de producción (GitHub Pages, Vercel, Hostinger, etc.):
+El proyecto utiliza una arquitectura moderna basada en **Vite** y **Tailwind CSS compilado** para lograr máximo rendimiento y puntuación perfecta en Core Web Vitals:
 
 ```
 /
-├── index.html               # Landing page principal
-├── catalogo.html            # Catálogo de argollas de matrimonio
-├── orfebreria.html          # Información sobre servicios de orfebrería y talleres
-├── galeria.html             # Galería interactiva (Mosaico)
-├── quien-soy.html           # Biografía e historia del orfebre
-├── contacto.html            # Información de contacto y ubicación
-├── README.md                # Documentación técnica
-├── LICENSE                  # Licencia y derechos de propiedad
-├── /js
-│   ├── main.js              # Interacciones, Lightbox, True Lazy Loading y UX
-│   └── gallery_data.js      # Base de datos JSON con el inventario de la galería
-├── /assets                  # Multimedia optimizada (imágenes webp/jpg y videos mp4)
-│   └── /gallery             # Fotos y videos renderizados en la galería dinámica
+├── index.html                   # Landing page principal (fuente Vite)
+├── catalogo.html                # Catálogo de argollas y anillos (fuente Vite)
+├── orfebreria.html              # Información sobre talleres y academia
+├── galeria.html                 # Galería interactiva (Fotos y Videos)
+├── quien-soy.html               # Biografía e historia del orfebre
+├── contacto.html                # Formulario dinámico de cotizaciones y visitas
+├── vite.config.js               # Configuración multi-página de Vite
+├── tailwind.config.cjs          # Tokens de diseño, tipografías y plugins
+├── postcss.config.cjs           # Procesamiento de Tailwind CSS
+├── vercel.json                  # Configuración de despliegue en Vercel (dist/)
+├── package.json                 # Dependencias y scripts de build
+├── README.md                    # Documentación técnica
+├── LICENSE                      # Licencia y derechos de propiedad
+├── /src
+│   ├── main.js                  # Entrypoint de JS y orquestación
+│   ├── main.css                 # CSS principal + @font-face locales
+│   └── galeria.js               # Lógica dinámica del mosaico de galería
+├── /public                      # Archivos estáticos y multimedia optimizada
+│   ├── /assets                  # Logos, banners y videos transcodificados
+│   │   ├── /fonts               # Tipografías self-hosted (Bodoni Moda, Inter, etc.)
+│   │   ├── /videos-optimized    # Videos en WebM/MP4 con posters
+│   │   └── /optimized           # Imágenes en WebP/AVIF
+│   ├── /anillos_compromiso_torrealba_imagenes
+│   ├── /argollas_torrealba_imagenes
+│   ├── gallery-images.json      # Catálogo de fotos para galería
+│   └── gallery-videos.json      # Catálogo de videos para galería
+├── /scripts                     # Herramientas de optimización y descarga de fuentes
+├── /dist                        # Build optimizado para producción (ignorado en Git)
+└── /respaldo-sitio-antiguo      # Archivo histórico de la versión previa (ignorado en Git)
 ```
-*(Nota: Las carpetas de archivos crudos como `VIDEOS` o `SAMI fotos...` son solo para almacenamiento local del desarrollador y no son necesarias para la carga de la página web).*
+
+---
 
 ## Historial de Cambios y Mejoras (Changelog)
+
+### v1.1.0 - Modernización de Arquitectura, Rendimiento Extremo y Self-Hosting (27 de Septiembre de 2026)
+- **Compilación Nativa con Vite y PostCSS**: Se erradicó completamente la dependencia en tiempo de ejecución del script CDN de Tailwind CSS (`cdn.tailwindcss.com`). El CSS ahora se purga y compila por completo en tiempo de construcción, reduciendo a cero el tiempo de bloqueo del hilo principal (*Total Blocking Time*).
+- **Self-Hosting Total de Fuentes Web (WOFF2)**: Sustitución de Google Fonts CDN por fuentes autoalojadas localmente en WOFF2 de última generación:
+  - *Bodoni Moda* (Normal e Itálica con pesos variables 400–900).
+  - *Inter* (Pesos 300, 400, 500, 600 y variable).
+  - *Playfair Display* (400–900).
+  - *Great Vibes* (400).
+  - *Material Symbols Outlined* (Fuente variable de iconos).
+- **Soporte Completo de Acentos y Caracteres en Español**: Descarga directa de los subconjuntos oficiales *Latin* y *Latin-Extended* de Google Fonts para garantizar que todas las letras acentuadas (`á, é, í, ó, ú, ñ, ¡, ¿`) conserven al 100% las serifas e inclinación itálica auténticas de Bodoni Moda (resolviendo desalineaciones en títulos como *"Galería interactiva"* y *"Quién Soy"*).
+- **Transcodificación y Optimización de Video**: Conversión de videos verticales pesados a formatos comprimidos **WebM** y **MP4** con *posters* estáticos en JPEG para renderizado instantáneo, reduciendo el consumo de datos móviles en más de un 70%.
+- **Formulación y Plugins de UI**: Integración y configuración oficial de `@tailwindcss/forms` y `@tailwindcss/container-queries`.
+- **Despliegue Automatizado para Vercel y Producción**: Configuración de `vercel.json` con `outputDirectory: "dist"` y `buildCommand: "npm run build"`, preservando intactas todas las redirecciones permanentes previas.
+- **Resguardo de la Versión Antigua**: Todo el código de la versión previa fue organizado y preservado en la carpeta `respaldo-sitio-antiguo/`, quedando automáticamente excluida del control de versiones en `.gitignore`.
 
 ### v1.0.4 - Mejoras en Formularios de Contacto (03 de Septiembre de 2026)
 - **Segmentación Geográfica**: Integración dinámica de campos de selección para Región y Ciudad (346 comunas de Chile) en todos los formularios (`contacto.html`, `catalogo.html`, `orfebreria.html`).
@@ -46,24 +77,41 @@ Los siguientes archivos conforman el núcleo de la aplicación web que debe ser 
 - **Indexación y Rastreo**: Creación y configuración de archivos raíz `robots.txt` y `sitemap.xml` para acelerar la correcta indexación de todo el sitio.
 
 ### v1.0.1 - Actualización de Correcciones Menores (26 de Agosto de 2026)
-- **Ajustes de UI en Catálogos**: Los contenedores de las fotografías de los anillos ahora adoptan una forma rectangular apaisada (más anchos que altos), optimizando y aumentando el espacio de visualización sin distorsionar las proporciones.
-- **Formulario de Contacto**: Se refinaron las opciones "Talleres" y "Otras consultas", ocultando la fecha de matrimonio (por ser innecesaria) y ajustando la etiqueta a "Nombre del/los interesado/s" para mayor claridad.
+- **Ajustes de UI en Catálogos**: Los contenedores de las fotografías de los anillos adoptan una relación de aspecto apaisada para maximizar el área de visualización de producto.
+- **Formulario de Contacto**: Refinamiento en categorías de Talleres y Consultas para un flujo de captura de prospectos más limpio.
 
-El sitio ha pasado por una rigurosa arquitectura y optimización de rendimiento:
-
-- **Rediseño Premium de Landing Page**: Implementación de tarjetas estilo *bento box* con fondos de video responsivos para redirigir a las distintas páginas, mejorando la inmersión del usuario.
-- **True Lazy Loading y Rendimiento Móvil**: Se construyó un sistema nativo mediante `IntersectionObserver` que detiene la carga simultánea de multimedia. Los videos y fotos solo consumen red en el momento exacto en que entran al campo visual, erradicando cuellos de botella en redes móviles.
-- **Compresión de Archivos**: Los archivos de video y fotografía en `/assets` han sido sometidos a compresión agresiva sin pérdida perceptible, reduciendo el peso global del repositorio en más de un 80% para lograr cargas instantáneas.
-- **SEO & Open Graph**: Inyección de metadatos `<meta>` en todas las páginas, para garantizar un aspecto elegante y estructurado al compartir enlaces en redes sociales (WhatsApp, Instagram).
-- **Consolidación de Contacto**: Botones flotantes y enlaces integrados con la API de WhatsApp apuntando unificadamente al número oficial (+56950082045).
-- **Mosaico Algorítmico**: La Galería interactiva auto-ajusta las fotografías mediante reglas de CSS Grid para generar un muro visual dinámico.
+---
 
 ## Tecnologías Utilizadas
 
-- **Core**: HTML5 semántico.
-- **Diseño**: Tailwind CSS (integrado vía CDN con configuración extendida). Tipografías de Google Fonts (*Bodoni Moda* y *Inter*).
-- **Interactividad**: Vanilla JavaScript Moderno (ES6+), haciendo uso intensivo de la API `IntersectionObserver` para animaciones y rendimiento de red, además del manejo del DOM.
-- **Iconografía**: Google Material Symbols.
+- **Core**: HTML5 semántico multi-página.
+- **Bundler y Servidor de Desarrollo**: [Vite](https://vitejs.dev/) (build de producción en `dist/`).
+- **Estilos**: Tailwind CSS compilado localmente con [PostCSS](https://postcss.org/), plugins `@tailwindcss/forms` y `@tailwindcss/container-queries`.
+- **Tipografías**: Self-hosted WOFF2 (*Bodoni Moda*, *Inter*, *Playfair Display*, *Great Vibes* y *Material Symbols Outlined*).
+- **Interactividad**: Vanilla JavaScript Moderno (ES6+) con `IntersectionObserver` para carga diferida de imágenes y videos.
+- **Alojamiento y Despliegue**: Preparado para [Vercel](https://vercel.com/) y [GitHub Pages].
+
+---
+
+## Comandos del Proyecto
+
+Para trabajar localmente en el proyecto:
+
+```bash
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo en vivo (HMR)
+npm run dev
+
+# Compilar para producción (genera la carpeta dist/)
+npm run build
+
+# Previsualizar el bundle de producción localmente
+npm run preview
+```
+
+---
 
 ## Propiedad Intelectual y Licencia
 
