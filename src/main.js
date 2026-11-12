@@ -394,4 +394,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
         lazyVideos.forEach(vid => lazyVideoObserver.observe(vid));
     }
+
+    // --- Pop-up de Primer Ingreso ("Últimos cupos 2026-2027") ---
+    const WELCOME_STORAGE_KEY = 'torrealba_welcome_popup_2026_seen';
+    const popupPhotoUrl = new URL('../assets/popup_bg.jpg', import.meta.url).href;
+    if (!sessionStorage.getItem(WELCOME_STORAGE_KEY)) {
+        const popupEl = document.createElement('div');
+        popupEl.className = 'tj-popup-backdrop';
+        popupEl.id = 'tj-welcome-popup';
+        popupEl.setAttribute('role', 'dialog');
+        popupEl.setAttribute('aria-modal', 'true');
+        popupEl.setAttribute('aria-labelledby', 'tj-popup-title');
+        popupEl.innerHTML = `
+            <div class="tj-popup-card">
+                <button type="button" class="tj-popup-close" id="tj-popup-close" aria-label="Cerrar aviso">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path d="M6 6l12 12M18 6L6 18"/>
+                    </svg>
+                </button>
+                <div class="tj-popup-media">
+                    <img src="${popupPhotoUrl}" alt="Argollas de matrimonio Torrealba Joyas" decoding="async" />
+                </div>
+                <div class="tj-popup-body">
+                    <div class="tj-popup-emblem" aria-hidden="true">
+                        <svg width="42" height="26" viewBox="0 0 44 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <circle cx="16" cy="15" r="9.5"/>
+                            <circle cx="28" cy="15" r="9.5"/>
+                            <path d="M16 5.5l-2.5-3.5h5L16 5.5z" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </div>
+                    <div class="tj-popup-kicker">Últimos cupos 2026 – 2027</div>
+                    <h2 class="tj-popup-title" id="tj-popup-title">Reserva ya tu hora de atención</h2>
+                    <p class="tj-popup-desc">
+                        Cada par de argollas y anillo de compromiso es forjado a mano de forma exclusiva en nuestro taller. Explora nuestro catálogo y agenda tu atención personalizada para asegurar tu fecha.
+                    </p>
+                    <div class="tj-popup-actions">
+                        <a href="contacto.html" class="tj-popup-btn tj-popup-btn--primary" data-popup-action="agendar">Agendar Hora</a>
+                        <a href="catalogo.html" class="tj-popup-btn tj-popup-btn--secondary" data-popup-action="catalogo">Ver Catálogo</a>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(popupEl);
+
+        const closeWelcomePopup = () => {
+            popupEl.classList.remove('is-open');
+            sessionStorage.setItem(WELCOME_STORAGE_KEY, '1');
+            setTimeout(() => {
+                popupEl.remove();
+            }, 500);
+        };
+
+        setTimeout(() => {
+            popupEl.classList.add('is-open');
+        }, 550);
+
+        popupEl.querySelector('#tj-popup-close')?.addEventListener('click', closeWelcomePopup);
+        popupEl.addEventListener('click', (e) => {
+            if (e.target === popupEl) closeWelcomePopup();
+        });
+        popupEl.querySelectorAll('[data-popup-action]').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                sessionStorage.setItem(WELCOME_STORAGE_KEY, '1');
+            });
+        });
+        document.addEventListener('keydown', function onEsc(e) {
+            if (e.key === 'Escape' && popupEl.classList.contains('is-open')) {
+                closeWelcomePopup();
+                document.removeEventListener('keydown', onEsc);
+            }
+        });
+    }
 });

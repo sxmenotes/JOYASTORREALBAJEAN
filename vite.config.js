@@ -3,6 +3,12 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    allowedHosts: ['ohiul-181-46-165-163.free.pinggy.net', '.pinggy.net'],
+  },
+  preview: {
+    allowedHosts: ['ohiul-181-46-165-163.free.pinggy.net', '.pinggy.net'],
+  },
   // Multi-page app: 6 HTML entry points
   build: {
     outDir: 'dist',
@@ -22,6 +28,7 @@ export default defineConfig({
         galeria:    resolve(__dirname, 'galeria.html'),
         quiensoy:   resolve(__dirname, 'quien-soy.html'),
         contacto:   resolve(__dirname, 'contacto.html'),
+        coleccion:  resolve(__dirname, 'coleccion.html'),
       },
       output: {
         // Hashed filenames for cache-busting

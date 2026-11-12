@@ -1,0 +1,683 @@
+/**
+ * coleccion.css — Estilos de la página "Hilo de Oro"
+ * Diseño unificado PC + Móvil:
+ *   Acto I:  Aro dorado central con título y 6 fotos flotantes alrededor que se abren como portal.
+ *   Acto II: Galería horizontal pineada con hilo dorado curvo, capítulos editoriales y marcos variados.
+ *   Acto III: Cierre editorial con llamado a la acción.
+ */
+
+:root {
+  --col-gold: #d4af37;
+  --col-gold-deep: #a9841c;
+  --col-ink: #111111;
+  --col-pattern: url('../assets/pattern-joyeria.svg');
+}
+
+/* ── Icono menú móvil puro CSS (evita descargar 4 MB de MaterialSymbolsOutlined.woff2) ── */
+.col-menu-icon {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background: currentColor;
+  font-size: 0;
+  line-height: 0;
+  color: inherit;
+  vertical-align: middle;
+  transition: background 0.25s ease;
+}
+.col-menu-icon::before,
+.col-menu-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: currentColor;
+  transition: transform 0.3s ease, top 0.3s ease;
+}
+.col-menu-icon::before { top: -7px; }
+.col-menu-icon::after  { top: 7px; }
+
+/* ───────────────────────── Escenario + patrón ligero (1 viewport) ───────────────────────── */
+.col-stage {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  isolation: isolate;
+}
+.col-pattern {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-image: var(--col-pattern);
+  background-size: 460px 460px;
+  background-repeat: repeat;
+  opacity: 0.2;
+  pointer-events: none;
+}
+.col-outro::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: var(--col-pattern);
+  background-size: 460px 460px;
+  background-repeat: repeat;
+  opacity: 0.2;
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .col-pattern, .col-outro::before { background-size: 280px 280px; opacity: 0.17; }
+}
+
+/* ───────────────────────── Formas compartidas (rectángulos y cuadrados con puntas variadas) ───────────────────────── */
+.col-shape--rect        { border-radius: 3px; }
+.col-shape--square      { border-radius: 4px; border: 1px solid rgba(17, 17, 17, 0.22); }
+.col-shape--round       { border-radius: 26px; border: 1px solid rgba(212, 175, 55, 0.55); }
+.col-shape--leaf        { border-radius: 72px 4px 72px 4px; }
+.col-shape--leaf-alt    { border-radius: 4px 72px 4px 72px; }
+.col-shape--arch        { border-radius: 130px 130px 4px 4px; }
+.col-shape--dome-bottom { border-radius: 4px 4px 130px 130px; }
+.col-shape--cut-corner  { border-radius: 84px 4px 4px 4px; }
+
+@media (max-width: 767px) {
+  .col-shape--round       { border-radius: 18px; }
+  .col-shape--leaf        { border-radius: 42px 3px 42px 3px; }
+  .col-shape--leaf-alt    { border-radius: 3px 42px 3px 42px; }
+  .col-shape--arch        { border-radius: 76px 76px 3px 3px; }
+  .col-shape--dome-bottom { border-radius: 3px 3px 76px 76px; }
+  .col-shape--cut-corner  { border-radius: 48px 3px 3px 3px; }
+}
+
+/* ───────────────────────── ACTO I · HERO ───────────────────────── */
+.col-hero {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background: transparent;
+}
+.col-hero__stage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  min-height: 560px;
+  overflow: hidden;
+}
+
+/* Aro central */
+.col-hero__ringwrap {
+  position: absolute;
+  inset: 0 0 40px 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.col-hero__ring {
+  width: min(78vw, 44vh);
+  height: min(78vw, 44vh);
+  overflow: visible;
+  will-change: transform, opacity;
+}
+@media (min-width: 768px) {
+  .col-hero__ring {
+    width: min(80vh, 96vw);
+    height: min(80vh, 96vw);
+  }
+}
+.col-hero__ring circle { transform-origin: 100px 100px; }
+
+.col-hero__sparks {
+  position: absolute;
+  inset: 0 0 40px 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.col-spark { position: absolute; transform-origin: 50% 50%; opacity: 0; }
+
+/* Centro: kicker + título + script dentro del aro */
+.col-hero__center {
+  position: absolute;
+  inset: 0 0 40px 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+  padding: 0 12px;
+}
+.col-hero__kicker {
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  color: rgba(17, 17, 17, 0.72);
+  margin-bottom: 0.55rem;
+}
+@media (min-width: 768px) {
+  .col-hero__kicker {
+    font-size: 11px;
+    letter-spacing: 0.34em;
+    margin-bottom: 1.2rem;
+  }
+}
+.col-hero__title {
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--col-ink);
+  line-height: 0.92;
+  font-size: clamp(3rem, 13.5vw, 4.4rem);
+}
+@media (min-width: 768px) {
+  .col-hero__title { font-size: clamp(4.5rem, min(12.5vw, 19vh), 12rem); }
+}
+.col-hero__line {
+  display: block;
+  overflow: hidden;
+  padding: 0.05em 0.1em 0.14em;
+  white-space: nowrap;
+}
+.col-hero__line [data-split] { display: inline-block; }
+.col-char { display: inline-block; will-change: transform; }
+.col-hero__gold .col-char {
+  background: linear-gradient(100deg, var(--col-gold-deep) 0%, #f0d77a 50%, var(--col-gold) 75%, var(--col-gold-deep) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.col-hero__script {
+  margin-top: 0.3rem;
+  font-size: clamp(1.3rem, 5.2vw, 1.85rem);
+  color: var(--col-gold-deep);
+  white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .col-hero__script {
+    margin-top: 0.4rem;
+    font-size: clamp(1.5rem, 2.6vw, 2.5rem);
+  }
+}
+
+/* Fotos alrededor del aro (las 6 presentes tanto en PC como en móvil) */
+.col-frame {
+  position: absolute;
+  z-index: 2;
+}
+.col-frame__in {
+  width: 100%;
+  height: 100%;
+}
+.col-frame__fig {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f3f3f4;
+  box-shadow: 0 18px 38px -12px rgba(17, 17, 17, 0.22);
+}
+.col-frame__fig img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  display: block;
+}
+
+/* Desktop frames */
+.col-frame--a { left: 5vw;   top: 14vh; width: 15vw; height: 33vh; }
+.col-frame--b { left: 15vw;  top: 56vh; width: 12vw; height: 12vw; }
+.col-frame--e { left: 2.5vw; top: 52vh; width: 7.5vw; height: 23vh; }
+.col-frame--c { right: 5vw;  top: 12vh; width: 14vw; height: 29vh; }
+.col-frame--d { right: 13vw; top: 55vh; width: 13vw; height: 27vh; }
+.col-frame--f { right: 3vw;  top: 48vh; width: 7.5vw; height: 25vh; }
+
+/* Móvil: la misma constelación de 6 marcos (3 arriba y 3 abajo del aro central) */
+@media (max-width: 767px) {
+  .col-frame--a { left: 4vw;   top: 3vh;  width: 26vw; height: 17vh; }
+  .col-frame--e { left: 38vw;  top: 5vh;  width: 19vw; height: 13vh; }
+  .col-frame--c { right: 4vw;  top: 3vh;  width: 25vw; height: 16vh; }
+  .col-frame--b { left: 5vw;   top: 66vh; width: 23vw; height: 23vw; }
+  .col-frame--d { left: 36vw;  top: 65vh; width: 26vw; height: 16vh; }
+  .col-frame--f { right: 5vw;  top: 64vh; width: 18vw; height: 15vh; }
+}
+
+.col-hero__ui {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+.col-hero__scroll {
+  position: absolute;
+  left: 5vw;
+  bottom: calc(80px + 2.5vh);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: rgba(17, 17, 17, 0.72);
+}
+@media (min-width: 768px) {
+  .col-hero__scroll {
+    left: 4vw;
+    bottom: calc(80px + 3vh);
+  }
+}
+.col-hero__scroll i {
+  display: block;
+  width: 48px;
+  height: 1px;
+  background: rgba(17, 17, 17, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+.col-hero__scroll i::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--col-gold);
+  transform: translateX(-100%);
+  animation: col-scroll-hint 2.2s cubic-bezier(.65, 0, .35, 1) infinite;
+}
+@keyframes col-scroll-hint {
+  0% { transform: translateX(-100%); }
+  60%, 100% { transform: translateX(100%); }
+}
+
+/* ───────────────────────── ACTO II · EL HILO (mismo diseño en PC y Móvil) ───────────────────────── */
+.col-thread {
+  position: relative;
+  z-index: 1;
+  color: var(--col-ink);
+  overflow: hidden;
+}
+.col-thread__pin { position: relative; }
+
+/* Base sin movimiento (solo para prefers-reduced-motion) */
+.col-track {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12vw;
+  padding: 14vw 7vw 20vw;
+}
+.col-thread__svg,
+.col-hud { display: none; }
+
+/* Capítulos: tipografía editorial limpia sin cajas ni bordes */
+.col-chapter {
+  text-align: left;
+  line-height: 0.9;
+  margin: 0 3vw;
+  z-index: 1;
+}
+.col-chapter__no {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--col-ink);
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 768px) {
+  .col-chapter__no {
+    font-size: 11px;
+    margin-bottom: 1rem;
+  }
+}
+.col-chapter__word {
+  display: block;
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(4.8rem, 22vw, 7.8rem);
+  color: var(--col-ink);
+}
+@media (min-width: 768px) {
+  .col-chapter__word { font-size: clamp(8rem, 17vw, 20rem); }
+}
+
+.col-piece {
+  position: relative;
+  z-index: 1;
+  width: 70vw;
+  cursor: zoom-in;
+  -webkit-tap-highlight-color: transparent;
+}
+.col-piece__shape {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+}
+.col-piece__fig {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f3f3f4;
+  box-shadow: 0 20px 42px -15px rgba(17, 17, 17, 0.22);
+}
+.col-piece__fig img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+@media (hover: hover) {
+  .col-piece:hover .col-piece__fig img { filter: brightness(1.05) saturate(1.08); }
+}
+.col-piece__no {
+  display: block;
+  margin-bottom: 12px;
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--col-ink);
+}
+@media (min-width: 768px) {
+  .col-piece__no {
+    margin-bottom: 14px;
+    font-size: 1.15rem;
+  }
+}
+.col-piece__no b { font-weight: 400; opacity: 0.45; font-size: 0.8em; }
+
+/* Contorno desplazado y variantes de puntas para marcos rectangulares/cuadrados */
+.col-piece__outline {
+  display: none;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border: 1px solid rgba(17, 17, 17, 0.28);
+  transform: translate(10px, 10px);
+  pointer-events: none;
+}
+@media (min-width: 768px) {
+  .col-piece__outline { transform: translate(14px, 14px); }
+}
+.col-piece--outline .col-piece__outline { display: block; }
+
+.col-piece--rect        .col-piece__fig, .col-piece--rect        .col-piece__outline { border-radius: 3px; }
+.col-piece--square      .col-piece__fig, .col-piece--square      .col-piece__outline { border-radius: 4px; }
+.col-piece--square      .col-piece__fig { border: 1px solid rgba(17, 17, 17, 0.22); }
+.col-piece--round       .col-piece__fig, .col-piece--round       .col-piece__outline { border-radius: 26px; }
+.col-piece--round       .col-piece__fig { border: 1px solid rgba(212, 175, 55, 0.55); }
+.col-piece--leaf        .col-piece__fig, .col-piece--leaf        .col-piece__outline { border-radius: 68px 4px 68px 4px; }
+.col-piece--leaf-alt    .col-piece__fig, .col-piece--leaf-alt    .col-piece__outline { border-radius: 4px 68px 4px 68px; }
+.col-piece--arch        .col-piece__fig, .col-piece--arch        .col-piece__outline { border-radius: 120px 120px 4px 4px; }
+.col-piece--dome-bottom .col-piece__fig, .col-piece--dome-bottom .col-piece__outline { border-radius: 4px 4px 120px 120px; }
+.col-piece--cut-corner  .col-piece__fig, .col-piece--cut-corner  .col-piece__outline { border-radius: 76px 4px 4px 4px; }
+
+@media (max-width: 767px) {
+  .col-piece--round       .col-piece__fig, .col-piece--round       .col-piece__outline { border-radius: 20px; }
+  .col-piece--leaf        .col-piece__fig, .col-piece--leaf        .col-piece__outline { border-radius: 46px 4px 46px 4px; }
+  .col-piece--leaf-alt    .col-piece__fig, .col-piece--leaf-alt    .col-piece__outline { border-radius: 4px 46px 4px 46px; }
+  .col-piece--arch        .col-piece__fig, .col-piece--arch        .col-piece__outline { border-radius: 86px 86px 4px 4px; }
+  .col-piece--dome-bottom .col-piece__fig, .col-piece--dome-bottom .col-piece__outline { border-radius: 4px 4px 86px 86px; }
+  .col-piece--cut-corner  .col-piece__fig, .col-piece--cut-corner  .col-piece__outline { border-radius: 54px 4px 4px 4px; }
+}
+
+/* ── Escenario horizontal pineado (activo tanto en PC como en Móvil) ── */
+.col-stage.col-combined {
+  height: 100vh;
+  height: 100svh;
+}
+.col-combined .col-hero {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+.col-combined .col-hero__stage { height: 100%; }
+.col-combined .col-thread { height: 100%; }
+
+.col-horizontal .col-thread__pin {
+  height: 100vh;
+  height: 100svh;
+}
+.col-horizontal .col-track {
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  height: 100%;
+  gap: 11vw;
+  padding: 0 16vw 0 12vw;
+}
+@media (min-width: 768px) {
+  .col-horizontal .col-track {
+    gap: 6vw;
+    padding: 0 14vw 0 12vw;
+  }
+}
+.col-horizontal .col-thread__svg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+.col-horizontal .col-piece {
+  flex: 0 0 auto;
+  align-self: center;
+  width: var(--mw);
+  margin-top: var(--my, 0);
+  margin-left: var(--mml, 0);
+}
+.col-horizontal .col-piece__shape {
+  height: var(--mh);
+  aspect-ratio: auto;
+}
+@media (min-width: 768px) {
+  .col-horizontal .col-piece {
+    width: var(--w);
+    margin-top: var(--y, 0);
+    margin-left: var(--ml, 0);
+  }
+  .col-horizontal .col-piece__shape {
+    height: var(--h);
+  }
+}
+.col-horizontal .col-piece__fig img {
+  width: 124%;
+  left: -12%;
+}
+.col-horizontal .col-chapter {
+  flex: 0 0 auto;
+  margin: 0 4vw;
+  align-self: center;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .col-horizontal .col-chapter { margin: 0 2vw; }
+}
+
+/* HUD editorial inferior: limpio y sin bordes/botones tanto en PC como en móvil */
+.col-horizontal .col-hud {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  left: 5vw;
+  right: 5vw;
+  bottom: 3.2vh;
+  z-index: 5;
+  pointer-events: none;
+}
+@media (min-width: 768px) {
+  .col-horizontal .col-hud {
+    gap: 28px;
+    left: 4vw;
+    right: 4vw;
+    bottom: 4vh;
+  }
+}
+.col-hud__chapter { font-size: 10px; letter-spacing: 0.28em; color: var(--col-ink); min-width: 96px; }
+@media (min-width: 768px) {
+  .col-hud__chapter { font-size: 11px; letter-spacing: 0.32em; min-width: 150px; }
+}
+.col-hud__count {
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--col-ink);
+  min-width: 74px;
+}
+@media (min-width: 768px) {
+  .col-hud__count { font-size: 1.5rem; min-width: 96px; }
+}
+.col-hud__count b { font-weight: 400; display: inline-block; }
+.col-hud__count i { opacity: 0.35; margin: 0 2px; }
+.col-hud__count span { opacity: 0.5; font-size: 0.85em; }
+.col-hud__bar { flex: 1; height: 1px; background: rgba(17, 17, 17, 0.16); position: relative; }
+.col-hud__bar > div {
+  position: absolute;
+  inset: 0;
+  background: var(--col-gold);
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+}
+
+/* ───────────────────────── ACTO III · CIERRE ───────────────────────── */
+.col-outro {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  padding: 110px 0;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .col-outro { padding: 140px 0; }
+}
+.col-outro__title {
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(2.4rem, 7vw, 5.2rem);
+  line-height: 1.1;
+  color: var(--col-ink);
+}
+.col-outro__title .font-great-vibes { font-size: 1.25em; font-style: normal; }
+.col-btn {
+  display: inline-block;
+  padding: 20px 44px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+.col-btn--solid { background: var(--col-ink); color: #fff; border: 1px solid var(--col-ink); }
+.col-btn--solid:hover { background: var(--col-gold); border-color: var(--col-gold); }
+.col-btn--ghost { background: transparent; color: var(--col-ink); border: 1px solid var(--col-ink); }
+.col-btn--ghost:hover { border-color: var(--col-gold); color: var(--col-gold-deep); }
+
+/* ───────────────────────── LIGHTBOX con zoom ───────────────────────── */
+.col-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(252, 250, 246, 0.97);
+  visibility: hidden;
+  opacity: 0;
+  color: var(--col-ink);
+}
+.col-lightbox::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--col-pattern);
+  background-size: 420px 420px;
+  opacity: 0.12;
+  pointer-events: none;
+}
+.col-lightbox__stage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  touch-action: none;
+  cursor: zoom-in;
+}
+.col-lightbox.is-zoomed .col-lightbox__stage { cursor: grab; }
+.col-lightbox.is-dragging .col-lightbox__stage { cursor: grabbing; }
+.col-lightbox img {
+  position: relative;
+  max-width: 90vw;
+  max-height: 80vh;
+  object-fit: contain;
+  box-shadow: 0 26px 64px -20px rgba(17, 17, 17, 0.32);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.col-lightbox__btn {
+  position: absolute;
+  z-index: 3;
+  padding: 12px;
+  color: var(--col-ink);
+  transition: color 0.3s ease;
+}
+.col-lightbox__btn:hover { color: var(--col-gold-deep); }
+.col-lightbox__close { top: 18px; right: 18px; }
+.col-lightbox__prev { left: 10px; top: 50%; transform: translateY(-50%); }
+.col-lightbox__next { right: 10px; top: 50%; transform: translateY(-50%); }
+
+.col-lightbox__bar {
+  position: absolute;
+  z-index: 3;
+  bottom: 4.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 6px 10px;
+  border: 1px solid rgba(169, 132, 28, 0.45);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  white-space: nowrap;
+}
+.col-lightbox__zbtn {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.col-lightbox__zbtn:hover { background: var(--col-gold); color: #fff; }
+.col-lightbox__cap { font-size: 11px; letter-spacing: 0.28em; color: var(--col-ink); }
+.col-lightbox__hint {
+  position: absolute;
+  z-index: 2;
+  top: 26px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.26em;
+  color: rgba(17, 17, 17, 0.55);
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.col-lightbox.is-zoomed .col-lightbox__hint { opacity: 0; }
+@media (max-width: 767px) {
+  .col-lightbox__hint { padding: 0 60px; line-height: 1.6; }
+  .col-lightbox__prev, .col-lightbox__next { top: auto; bottom: calc(4.5vh + 2px); transform: none; }
+  .col-lightbox__prev { left: 6px; }
+  .col-lightbox__next { right: 6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .col-hero__scroll i::after { animation: none; }
+}
